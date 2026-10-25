@@ -2,7 +2,7 @@
 
 ## 1.0.1 - 2026-10-25
 
-Upgrade the PDF inspection dependency to pypdf6.21.2 to address upstream security advisories. The catalogue remains150 repositories,14 topics and18 external resources; the58-page reference is rebuilt with matching edition metadata. No listed solver or third-party code is installed or executed by this change.
+Upgrade the PDF inspection dependency to pypdf 6.21.2 to address upstream security advisories. The catalogue remains 150 repositories, 14 topics and 18 external resources; the 58-page reference is rebuilt with matching edition metadata. No listed solver or third-party code is installed or executed by this change.
 
 ## 1.0.0 - 2026-10-25
 
