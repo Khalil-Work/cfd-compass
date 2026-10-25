@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: Please cite this directory when referring to its curation, and cite original upstream software and papers separately when you use them.
+title: 'CFD Compass: An Open Reference for Fluid Dynamics'
+type: dataset
+version: 1.0.0
+date-released: 2026-10-25
+authors:
+  - family-names: KHALIL
+    given-names: Mohammed
+    website: https://github.com/Khalil-Work
+repository-code: https://github.com/Khalil-Work/cfd-compass
+url: https://khalil-work.github.io/cfd-compass/
+license: CC-BY-4.0
+keywords:
+  - computational-fluid-dynamics
+  - scientific-computing
+  - curated-directory
+  - research-software
+  - reproducibility

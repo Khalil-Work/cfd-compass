@@ -1,0 +1,3055 @@
+[
+  {
+    "name": "AeroSandbox",
+    "repo": "peterdsharpe/AeroSandbox",
+    "category": "automation-uq",
+    "summary": "Python aircraft design and optimization environment using automatic differentiation and composable engineering analyses. Useful for rapid aerodynamic design exploration and multidisciplinary studies before committing to higher-fidelity CFD evaluations.",
+    "best_for": "Aircraft design and aerodynamic screening",
+    "tags": [
+      "aerodynamics",
+      "design",
+      "optimization",
+      "autodiff"
+    ],
+    "docs_url": "https://aerosandbox.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/peterdsharpe/AeroSandbox"
+    ],
+    "caveat": "Many included methods are reduced-fidelity engineering models; do not equate all analyses with Navier–Stokes CFD.",
+    "maturity": "established"
+  },
+  {
+    "name": "Chaospy",
+    "repo": "jonathf/chaospy",
+    "category": "automation-uq",
+    "summary": "Numerical toolbox for polynomial chaos, sampling and quadrature. Useful for propagating uncertain flow parameters through CFD surrogates or moderately priced solvers and building nonintrusive uncertainty-expansion experiments.",
+    "best_for": "Polynomial-chaos CFD uncertainty studies",
+    "tags": [
+      "uq",
+      "polynomial-chaos",
+      "quadrature",
+      "sampling"
+    ],
+    "docs_url": "https://chaospy.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/jonathf/chaospy"
+    ],
+    "caveat": "High-dimensional or discontinuous response surfaces may require alternatives to a simple polynomial expansion.",
+    "maturity": "established"
+  },
+  {
+    "name": "Dakota",
+    "repo": "snl-dakota/dakota",
+    "category": "automation-uq",
+    "summary": "Design exploration framework combining optimization, parameter estimation, sensitivity analysis and uncertainty quantification. Useful for managing repeated CFD evaluations and propagating uncertain inputs through external engineering simulation models.",
+    "best_for": "External-solver design exploration and UQ",
+    "tags": [
+      "uq",
+      "optimization",
+      "sampling",
+      "sensitivity"
+    ],
+    "docs_url": "https://snl-dakota.github.io/docs/latest_release/",
+    "source_urls": [
+      "https://github.com/snl-dakota/dakota",
+      "https://snl-dakota.github.io/docs/latest_release/users/misc/faq.html"
+    ],
+    "caveat": "Requires a working simulation interface and can demand many expensive flow evaluations.",
+    "maturity": "established"
+  },
+  {
+    "name": "foamlib",
+    "repo": "gerlero/foamlib",
+    "category": "automation-uq",
+    "summary": "Python interface for OpenFOAM files, cases and execution. Useful for reproducible parameter studies, programmatic field access and reducing repetitive case-management steps around an existing OpenFOAM installation.",
+    "best_for": "Automated OpenFOAM case management",
+    "tags": [
+      "openfoam",
+      "python",
+      "automation",
+      "workflow"
+    ],
+    "docs_url": "https://foamlib.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/gerlero/foamlib"
+    ],
+    "caveat": "OpenFOAM must be installed separately; confirm support for the selected distribution and file types.",
+    "maturity": "emerging"
+  },
+  {
+    "name": "MPhys",
+    "repo": "OpenMDAO/mphys",
+    "category": "automation-uq",
+    "summary": "Standardizes high-fidelity multiphysics problems within OpenMDAO using modular conventions and solver integrations. Useful for assembling CFD–structures or aerothermal studies while preserving coupling and derivative interfaces across disciplines.",
+    "best_for": "Modular high-fidelity MDO",
+    "tags": [
+      "mdo",
+      "multiphysics",
+      "adjoint",
+      "coupling"
+    ],
+    "docs_url": "https://openmdao.github.io/mphys/",
+    "source_urls": [
+      "https://github.com/OpenMDAO/mphys"
+    ],
+    "caveat": "It is an integration layer; individual examples require compatible external solvers and their dependencies.",
+    "maturity": "established"
+  },
+  {
+    "name": "OpenMDAO",
+    "repo": "OpenMDAO/OpenMDAO",
+    "category": "automation-uq",
+    "summary": "Python framework for tightly coupled systems analysis and multidisciplinary optimization. Useful for connecting CFD, structures and engineering models while managing derivatives, nonlinear coupling and parallel model execution.",
+    "best_for": "Coupled engineering optimization",
+    "tags": [
+      "mdo",
+      "derivatives",
+      "python",
+      "optimization"
+    ],
+    "docs_url": "https://openmdao.org/newdocs/versions/latest/",
+    "source_urls": [
+      "https://github.com/OpenMDAO/OpenMDAO",
+      "https://openmdao.org/newdocs/versions/latest/"
+    ],
+    "caveat": "CFD analysis components and reliable derivatives must be supplied; it does not replace a flow solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "OpenTURNS",
+    "repo": "openturns/openturns",
+    "category": "automation-uq",
+    "summary": "C++ and Python library for probabilistic modelling and uncertainty treatment in industrial studies. Useful for wrapping CFD evaluations, defining uncertain inputs and constructing reliability, sensitivity or surrogate analyses.",
+    "best_for": "Probabilistic CFD study design",
+    "tags": [
+      "uq",
+      "probability",
+      "reliability",
+      "surrogate"
+    ],
+    "docs_url": "https://openturns.github.io/openturns/latest/",
+    "source_urls": [
+      "https://github.com/openturns/openturns"
+    ],
+    "caveat": "Physics and solver interfaces remain application-specific; verify sampling accuracy and assumptions about input distributions.",
+    "maturity": "established"
+  },
+  {
+    "name": "pyOptSparse",
+    "repo": "mdolab/pyoptsparse",
+    "category": "automation-uq",
+    "summary": "Framework for defining and solving constrained nonlinear optimization problems with sparse derivatives. Useful as an optimization driver around aerodynamic CFD models and other expensive engineering analyses with many constraints.",
+    "best_for": "Sparse constrained aerodynamic optimization",
+    "tags": [
+      "optimization",
+      "sparse",
+      "mdo",
+      "derivatives"
+    ],
+    "docs_url": "https://mdolab-pyoptsparse.readthedocs-hosted.com/en/latest/",
+    "source_urls": [
+      "https://github.com/mdolab/pyoptsparse"
+    ],
+    "caveat": "Some optimizer backends require separate proprietary licenses; check the chosen backend and installation.",
+    "maturity": "established"
+  },
+  {
+    "name": "RAVEN",
+    "repo": "idaholab/raven",
+    "category": "automation-uq",
+    "summary": "Simulation workflow framework for uncertainty quantification, optimization, model reduction and probabilistic risk analysis. Useful for orchestrating external CFD studies, sampling parameter spaces and training surrogates around expensive evaluations.",
+    "best_for": "Simulation orchestration and risk/UQ studies",
+    "tags": [
+      "uq",
+      "workflow",
+      "sampling",
+      "surrogate"
+    ],
+    "docs_url": "https://github.com/idaholab/raven#readme",
+    "source_urls": [
+      "https://github.com/idaholab/raven"
+    ],
+    "caveat": "Requires model interfaces, configuration and domain-specific validation; probabilistic output is only as reliable as its assumptions.",
+    "maturity": "established"
+  },
+  {
+    "name": "SALib",
+    "repo": "SALib/SALib",
+    "category": "automation-uq",
+    "summary": "Python implementations of global sensitivity-analysis methods such as Sobol and Morris. Useful for ranking uncertain CFD inputs after sampling and evaluating a separate solver or surrogate model.",
+    "best_for": "Global sensitivity of CFD outputs",
+    "tags": [
+      "sensitivity",
+      "sobol",
+      "morris",
+      "python"
+    ],
+    "docs_url": "https://salib.readthedocs.org/",
+    "source_urls": [
+      "https://github.com/SALib/SALib"
+    ],
+    "caveat": "Generates designs and analyzes outputs; the user supplies solver runs and checks estimator convergence.",
+    "maturity": "established"
+  },
+  {
+    "name": "UQpy",
+    "repo": "SURGroup/UQpy",
+    "category": "automation-uq",
+    "summary": "General Python toolbox for modelling uncertainty in physical and mathematical systems. Useful for uncertainty propagation and surrogate-based analyses around CFD models when sampling and probabilistic workflows need programmable control.",
+    "best_for": "Programmable CFD uncertainty workflows",
+    "tags": [
+      "uq",
+      "sampling",
+      "surrogate",
+      "python"
+    ],
+    "docs_url": "https://uqpyproject.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/SURGroup/UQpy"
+    ],
+    "caveat": "A general UQ library rather than a CFD package; connect and validate the simulation model separately.",
+    "maturity": "established"
+  },
+  {
+    "name": "DAFoam",
+    "repo": "mdolab/dafoam",
+    "category": "coupled-specialist",
+    "summary": "Adds discrete-adjoint capabilities to OpenFOAM-based multiphysics analysis with a Python interface for optimization. Supports aerodynamic, thermal and coupled design studies with many design variables.",
+    "best_for": "Adjoint aerodynamic and multidisciplinary optimization",
+    "tags": [
+      "OpenFOAM",
+      "adjoint",
+      "aerodynamics",
+      "heat-transfer",
+      "optimization"
+    ],
+    "docs_url": "https://dafoam.github.io/",
+    "source_urls": [
+      "https://github.com/mdolab/dafoam",
+      "https://dafoam.github.io/",
+      "https://dafoam.github.io/index.html"
+    ],
+    "caveat": "Requires compatible OpenFOAM and optimization dependencies; convergence of the primal and adjoint problems matters for usable design gradients. Use the documented solver and dependency versions; verify adjoint gradients for the chosen objective and case.",
+    "maturity": "established"
+  },
+  {
+    "name": "DuMux",
+    "repo": "dumux/dumux",
+    "category": "coupled-specialist",
+    "summary": "Models porous-medium flow, transport and deformation with finite-volume and control-volume finite-element methods. Includes coupled multidomain formulations for applications that cross free-flow and porous regions.",
+    "best_for": "Porous-media and multidomain transport",
+    "tags": [
+      "porous-media",
+      "multiphase",
+      "transport",
+      "finite-volume",
+      "coupling"
+    ],
+    "docs_url": "https://dumux.org/",
+    "source_urls": [
+      "https://github.com/dumux/dumux",
+      "https://dumux.org/",
+      "https://git.iws.uni-stuttgart.de/dumux-repositories/dumux"
+    ],
+    "caveat": "The GitHub repository is an official mirror; primary development and issue tracking are hosted by the Stuttgart GitLab project.",
+    "maturity": "established"
+  },
+  {
+    "name": "IBAMR",
+    "repo": "IBAMR/IBAMR",
+    "category": "coupled-specialist",
+    "summary": "Combines immersed-boundary methods with Cartesian adaptive mesh refinement and distributed-memory parallelism. Useful for deformable structures interacting with fluids while retaining separate Eulerian and Lagrangian descriptions.",
+    "best_for": "Immersed-boundary fluid-structure interaction",
+    "tags": [
+      "immersed-boundary",
+      "AMR",
+      "fluid-structure",
+      "MPI",
+      "biomechanics"
+    ],
+    "docs_url": "https://ibamr.github.io/",
+    "source_urls": [
+      "https://github.com/IBAMR/IBAMR",
+      "https://ibamr.github.io/"
+    ],
+    "caveat": "Requires a substantial numerical-library stack; discretization and coupling choices must match the stiffness, resolution and boundary conditions of the problem.",
+    "maturity": "established"
+  },
+  {
+    "name": "MRST",
+    "repo": "SINTEF-AppliedCompSci/MRST",
+    "category": "coupled-specialist",
+    "summary": "Provides a MATLAB toolbox for flow, transport and mechanics in porous media. Includes modular reservoir and carbon-storage workflows that support numerical experimentation and model development.",
+    "best_for": "Reservoir simulation and carbon storage",
+    "tags": [
+      "porous-media",
+      "reservoir",
+      "MATLAB",
+      "carbon-storage",
+      "transport"
+    ],
+    "docs_url": "https://www.sintef.no/projectweb/mrst/",
+    "source_urls": [
+      "https://github.com/SINTEF-AppliedCompSci/MRST",
+      "https://www.sintef.no/projectweb/mrst/"
+    ],
+    "caveat": "Upstream recommends packaged releases for most users; compatibility with GNU Octave varies by module and should not be assumed.",
+    "maturity": "established"
+  },
+  {
+    "name": "oomph-lib",
+    "repo": "oomph-lib/oomph-lib",
+    "category": "coupled-specialist",
+    "summary": "Offers an object-oriented finite-element library with extensive multiphysics demonstration problems. Useful for building fluid-mechanics and fluid-structure models when researchers need control of the governing formulation.",
+    "best_for": "Finite-element multiphysics method development",
+    "tags": [
+      "finite-element",
+      "fluid-structure",
+      "multiphysics",
+      "adaptive-mesh"
+    ],
+    "docs_url": "https://oomph-lib.github.io/oomph-lib/doc/html/",
+    "source_urls": [
+      "https://github.com/oomph-lib/oomph-lib",
+      "https://oomph-lib.github.io/oomph-lib/doc/html/"
+    ],
+    "caveat": "A programmable numerical library rather than a turnkey engineering interface; model formulation and solver choices remain the user's responsibility.",
+    "maturity": "established"
+  },
+  {
+    "name": "OpenPNM",
+    "repo": "PMEAL/OpenPNM",
+    "category": "coupled-specialist",
+    "summary": "Represents porous materials as pore networks and solves transport across them. Useful when investigating effective flow and transport properties without directly resolving every pore-scale fluid volume.",
+    "best_for": "Pore-network transport modeling",
+    "tags": [
+      "porous-media",
+      "pore-network",
+      "transport",
+      "Python"
+    ],
+    "docs_url": "https://openpnm.org/",
+    "source_urls": [
+      "https://github.com/PMEAL/OpenPNM",
+      "https://openpnm.org/"
+    ],
+    "caveat": "Network representations simplify pore geometry and physics; they are not interchangeable with fully resolved pore-scale Navier-Stokes simulations.",
+    "maturity": "established"
+  },
+  {
+    "name": "OPM Flow",
+    "repo": "OPM/opm-simulators",
+    "category": "coupled-specialist",
+    "summary": "Implements reservoir flow simulation with automatic differentiation and established reservoir input formats. Useful for multiphase subsurface studies that need well models and reservoir-scale fluid transport.",
+    "best_for": "Reservoir-scale multiphase simulation",
+    "tags": [
+      "reservoir",
+      "porous-media",
+      "multiphase",
+      "wells",
+      "automatic-differentiation"
+    ],
+    "docs_url": "https://opm-project.org/",
+    "source_urls": [
+      "https://github.com/OPM/opm-simulators",
+      "https://opm-project.org/"
+    ],
+    "caveat": "Reservoir models operate under subsurface-flow assumptions and should not be substituted directly for free-fluid CFD.",
+    "maturity": "established"
+  },
+  {
+    "name": "preCICE",
+    "repo": "precice/precice",
+    "category": "coupled-specialist",
+    "summary": "Connects existing simulation programs through partitioned coupling, interface data exchange and mapping. Provides a common route to fluid-structure interaction, conjugate heat transfer and other coupled workflows.",
+    "best_for": "Coupling independent physics solvers",
+    "tags": [
+      "coupling",
+      "fluid-structure",
+      "heat-transfer",
+      "multiphysics",
+      "mapping"
+    ],
+    "docs_url": "https://precice.org/docs.html",
+    "source_urls": [
+      "https://github.com/precice/precice",
+      "https://precice.org/docs.html"
+    ],
+    "caveat": "A coupling library, not a CFD solver. Stable coupling still depends on compatible adapters, interface conditions and convergence settings.",
+    "maturity": "established"
+  },
+  {
+    "name": "solids4foam",
+    "repo": "solids4foam/solids4foam",
+    "category": "coupled-specialist",
+    "summary": "Extends the OpenFOAM ecosystem with solid-mechanics and fluid-solid interaction models. Provides tutorials for comparing partitioned coupling approaches and examining deformation-driven changes to a flow domain.",
+    "best_for": "Finite-volume fluid-solid interaction",
+    "tags": [
+      "OpenFOAM",
+      "fluid-structure",
+      "solid-mechanics",
+      "finite-volume"
+    ],
+    "docs_url": "https://www.solids4foam.com/",
+    "source_urls": [
+      "https://github.com/solids4foam/solids4foam",
+      "https://www.solids4foam.com/"
+    ],
+    "caveat": "Compatibility is OpenFOAM-version dependent; verify the supported fork and version rather than mixing tutorial generations.",
+    "maturity": "established"
+  },
+  {
+    "name": "svMultiPhysics",
+    "repo": "SimVascular/svMultiPhysics",
+    "category": "coupled-specialist",
+    "summary": "Provides coupled finite-element models for fluids, solids, diffusion and electrophysiology in cardiovascular research. Supports investigations where blood flow and deforming biological tissue must be modeled together.",
+    "best_for": "Cardiovascular multiphysics and fluid-structure research",
+    "tags": [
+      "biomedical",
+      "finite-element",
+      "fluid-structure",
+      "cardiovascular",
+      "multiphysics"
+    ],
+    "docs_url": "https://simvascular.github.io/documentation/multi_physics.html",
+    "source_urls": [
+      "https://github.com/SimVascular/svMultiPhysics",
+      "https://simvascular.github.io/documentation/multi_physics.html",
+      "https://github.com/SimVascular/svFSIplus"
+    ],
+    "caveat": "Formerly svFSIplus; research software does not itself establish clinical suitability. Patient-specific predictions require separate validation and appropriate expertise.",
+    "maturity": "research"
+  },
+  {
+    "name": "ADCIRC",
+    "repo": "adcirc/adcirc",
+    "category": "environmental",
+    "summary": "Models time-dependent free-surface circulation and transport on unstructured finite-element grids. Common application areas include storm surge, tides, wind-driven circulation and coastal flooding studies.",
+    "best_for": "Storm surge and coastal circulation",
+    "tags": [
+      "coastal",
+      "storm-surge",
+      "finite-element",
+      "tides",
+      "flooding"
+    ],
+    "docs_url": "https://adcirc.github.io/adcirc/",
+    "source_urls": [
+      "https://github.com/adcirc/adcirc",
+      "https://adcirc.github.io/adcirc/"
+    ],
+    "caveat": "Requires suitable meshes, forcing and calibration for the site; official documentation is being consolidated across several maintained sources.",
+    "maturity": "established"
+  },
+  {
+    "name": "ANUGA",
+    "repo": "anuga-community/anuga_core",
+    "category": "environmental",
+    "summary": "Solves shallow-water equations for floods, tsunamis and storm surges using finite-volume methods. Provides Python workflows and examples for combining terrain, boundary conditions and inundation studies.",
+    "best_for": "Flood and tsunami inundation",
+    "tags": [
+      "flooding",
+      "tsunami",
+      "shallow-water",
+      "finite-volume",
+      "inundation"
+    ],
+    "docs_url": "https://anuga.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/anuga-community/anuga_core",
+      "https://anuga.readthedocs.io/",
+      "https://github.com/GeoscienceAustralia/anuga_core"
+    ],
+    "caveat": "Depth-averaged shallow-water assumptions do not resolve detailed vertical flow structure; terrain and boundary-data quality strongly affect inundation results.",
+    "maturity": "established"
+  },
+  {
+    "name": "CM1",
+    "repo": "NCAR/CM1",
+    "category": "environmental",
+    "summary": "Supports idealized atmospheric experiments with a nonhydrostatic numerical model. Useful for studying convection, clouds and organized storms while controlling the background state and experimental forcing.",
+    "best_for": "Idealized convection and storm research",
+    "tags": [
+      "atmosphere",
+      "nonhydrostatic",
+      "clouds",
+      "convection",
+      "storms"
+    ],
+    "docs_url": "https://cm1.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/NCAR/CM1",
+      "https://cm1.readthedocs.io/"
+    ],
+    "caveat": "Primarily an idealized research model; configuring a real-time operational forecast is a different task from running its standard experiments.",
+    "maturity": "established"
+  },
+  {
+    "name": "Delft3D",
+    "repo": "Deltares/Delft3D",
+    "category": "environmental",
+    "summary": "Collects Delft3D structured and flexible-mesh simulation engines for hydrodynamics, waves, morphology and water quality. Useful for integrated coastal, estuarine, river and urban water studies.",
+    "best_for": "Integrated hydrodynamics and morphodynamics",
+    "tags": [
+      "coastal",
+      "hydrodynamics",
+      "morphodynamics",
+      "water-quality",
+      "flexible-mesh"
+    ],
+    "docs_url": "https://oss.deltares.nl/web/delft3d",
+    "source_urls": [
+      "https://github.com/Deltares/Delft3D",
+      "https://oss.deltares.nl/web/delft3d"
+    ],
+    "caveat": "The source engines and packaged graphical interfaces have different delivery arrangements; component licensing and build requirements should be checked individually.",
+    "maturity": "established"
+  },
+  {
+    "name": "ERF",
+    "repo": "erf-model/ERF",
+    "category": "environmental",
+    "summary": "Builds atmospheric-flow modeling on AMReX with adaptive meshes and a documented theory and examples. Relevant to energy-related atmospheric research and simulations requiring local resolution refinement.",
+    "best_for": "Adaptive atmospheric and energy-flow studies",
+    "tags": [
+      "atmosphere",
+      "AMR",
+      "AMReX",
+      "wind-energy",
+      "HPC"
+    ],
+    "docs_url": "https://erf.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/erf-model/ERF",
+      "https://erf.readthedocs.io/"
+    ],
+    "caveat": "Check the supported atmospheric models and boundary treatments for the intended application; the solver remains an evolving research code.",
+    "maturity": "research"
+  },
+  {
+    "name": "FUNWAVE-TVD",
+    "repo": "fengyanshi/FUNWAVE-TVD",
+    "category": "environmental",
+    "summary": "Models dispersive nearshore waves with a Boussinesq-type formulation and shock-capturing treatment. Useful for wave transformation, coastal wave generation and studying processes beyond nondispersive shallow-water models.",
+    "best_for": "Dispersive coastal-wave transformation",
+    "tags": [
+      "coastal",
+      "waves",
+      "Boussinesq",
+      "nearshore",
+      "dispersion"
+    ],
+    "docs_url": "https://fengyanshi.github.io/build/html/index.html",
+    "source_urls": [
+      "https://github.com/fengyanshi/FUNWAVE-TVD",
+      "https://fengyanshi.github.io/build/html/index.html"
+    ],
+    "caveat": "Upstream labels the default branch beta and directs users to released versions. Confirm licensing and the release appropriate to your study.",
+    "maturity": "research"
+  },
+  {
+    "name": "GeoClaw",
+    "repo": "clawpack/geoclaw",
+    "category": "environmental",
+    "summary": "Extends Clawpack for geophysical waves and flows, including tsunami propagation and inundation. Uses adaptive refinement to concentrate resolution where evolving waves and coastal interactions require it.",
+    "best_for": "Tsunami propagation and inundation",
+    "tags": [
+      "tsunami",
+      "geophysical",
+      "AMR",
+      "shallow-water",
+      "inundation"
+    ],
+    "docs_url": "https://www.clawpack.org/geoclaw.html",
+    "source_urls": [
+      "https://github.com/clawpack/geoclaw",
+      "https://www.clawpack.org/geoclaw.html"
+    ],
+    "caveat": "Depth-averaged flow assumptions and topographic resolution constrain the phenomena represented; assess the model for the intended hazard application.",
+    "maturity": "established"
+  },
+  {
+    "name": "Kynema-SGF (formerly AMR-Wind)",
+    "repo": "kynema/kynema-sgf",
+    "category": "environmental",
+    "summary": "Uses an adaptive structured-grid incompressible formulation for atmospheric boundary layers and wind-farm wakes. Can serve as the background flow solver in coupled blade-resolved wind-energy simulations.",
+    "best_for": "Wind-farm wakes and atmospheric boundary layers",
+    "tags": [
+      "wind-energy",
+      "LES",
+      "AMR",
+      "atmospheric-boundary-layer",
+      "AMR-Wind"
+    ],
+    "docs_url": "https://kynema.github.io/kynema-sgf/",
+    "source_urls": [
+      "https://github.com/kynema/kynema-sgf",
+      "https://kynema.github.io/kynema-sgf/",
+      "https://github.com/Exawind/amr-wind"
+    ],
+    "caveat": "Renamed from AMR-Wind in 2026; actuator models and blade-resolved overset configurations represent different levels of physical detail.",
+    "maturity": "established"
+  },
+  {
+    "name": "Kynema-UGF (formerly Nalu-Wind)",
+    "repo": "kynema/kynema-ugf",
+    "category": "environmental",
+    "summary": "Provides an unstructured incompressible flow solver used in the Kynema wind-energy ecosystem. Useful for geometry-resolved turbine and energy-system flow calculations alongside structured background simulations.",
+    "best_for": "Geometry-resolved wind and energy-system flows",
+    "tags": [
+      "wind-energy",
+      "incompressible",
+      "unstructured-mesh",
+      "LES",
+      "Nalu-Wind"
+    ],
+    "docs_url": "https://kynema.github.io/kynema-ugf/",
+    "source_urls": [
+      "https://github.com/kynema/kynema-ugf",
+      "https://kynema.github.io/kynema-ugf/",
+      "https://github.com/Exawind/nalu-wind"
+    ],
+    "caveat": "Renamed from Nalu-Wind in 2026; coupled overset studies require additional ecosystem components and matching configuration.",
+    "maturity": "established"
+  },
+  {
+    "name": "MITgcm",
+    "repo": "MITgcm/MITgcm",
+    "category": "environmental",
+    "summary": "Models ocean and atmospheric circulation with a configurable numerical core and extensive verification examples. Useful across geophysical scales, including nonhydrostatic ocean processes and large-scale circulation.",
+    "best_for": "Ocean circulation and geophysical fluid dynamics",
+    "tags": [
+      "ocean",
+      "atmosphere",
+      "geophysical",
+      "nonhydrostatic",
+      "circulation"
+    ],
+    "docs_url": "https://mitgcm.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/MITgcm/MITgcm",
+      "https://mitgcm.readthedocs.io/"
+    ],
+    "caveat": "Configuration, forcing and parameterizations determine the applicable scale; reproducing an experiment requires more than selecting a solver executable.",
+    "maturity": "established"
+  },
+  {
+    "name": "MOM6",
+    "repo": "NOAA-GFDL/MOM6",
+    "category": "environmental",
+    "summary": "Solves ocean primitive equations with flexible vertical coordinates and options for coupled Earth-system configurations. Useful for ocean circulation studies and research into ocean-model numerics and parameterizations.",
+    "best_for": "Ocean circulation and Earth-system modeling",
+    "tags": [
+      "ocean",
+      "primitive-equations",
+      "climate",
+      "vertical-coordinate",
+      "coupling"
+    ],
+    "docs_url": "https://mom6.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/NOAA-GFDL/MOM6",
+      "https://mom6.readthedocs.io/"
+    ],
+    "caveat": "Designed for ocean primitive-equation modeling rather than general free-surface engineering CFD; regional setups need appropriate forcing and boundary data.",
+    "maturity": "established"
+  },
+  {
+    "name": "MPAS-Model",
+    "repo": "MPAS-Dev/MPAS-Model",
+    "category": "environmental",
+    "summary": "Provides a shared unstructured-mesh framework with atmosphere, ocean and other geophysical model cores. Useful for multiscale circulation studies where mesh design and regional refinement matter.",
+    "best_for": "Variable-resolution geophysical modeling",
+    "tags": [
+      "atmosphere",
+      "ocean",
+      "unstructured-mesh",
+      "climate",
+      "multiscale"
+    ],
+    "docs_url": "https://mpas-dev.github.io/",
+    "source_urls": [
+      "https://github.com/MPAS-Dev/MPAS-Model",
+      "https://mpas-dev.github.io/"
+    ],
+    "caveat": "Individual cores have separate build instructions, capabilities and data requirements; the shared repository is not a single universal model.",
+    "maturity": "established"
+  },
+  {
+    "name": "Proteus",
+    "repo": "erdc/proteus",
+    "category": "environmental",
+    "summary": "Separates continuum physical models from numerical methods in a Python-led toolkit. Includes multiphase Navier-Stokes, shallow-water and porous-flow formulations relevant to hydraulic and coastal research.",
+    "best_for": "Hydraulic multiphase and numerical-method research",
+    "tags": [
+      "coastal",
+      "multiphase",
+      "shallow-water",
+      "finite-element",
+      "porous-media"
+    ],
+    "docs_url": "https://proteustoolkit.org/",
+    "source_urls": [
+      "https://github.com/erdc/proteus",
+      "https://proteustoolkit.org/"
+    ],
+    "caveat": "Broad method availability does not make every formulation suitable for every problem; external compiled dependencies are part of the installation.",
+    "maturity": "established"
+  },
+  {
+    "name": "SCHISM",
+    "repo": "schism-dev/schism",
+    "category": "environmental",
+    "summary": "Uses unstructured grids for three-dimensional baroclinic circulation across connected river, estuary, shelf and ocean scales. Useful when one study spans several interacting hydrodynamic environments.",
+    "best_for": "Cross-scale river-estuary-ocean circulation",
+    "tags": [
+      "coastal",
+      "estuary",
+      "ocean",
+      "unstructured-mesh",
+      "baroclinic"
+    ],
+    "docs_url": "https://schism-dev.github.io/schism/",
+    "source_urls": [
+      "https://github.com/schism-dev/schism",
+      "https://schism-dev.github.io/schism/"
+    ],
+    "caveat": "Choose supported modules and document forcing and vertical-grid assumptions; development-branch flags can change between model versions.",
+    "maturity": "established"
+  },
+  {
+    "name": "Thetis",
+    "repo": "thetisproject/thetis",
+    "category": "environmental",
+    "summary": "Builds coastal and estuarine flow models on Firedrake finite elements. Includes shallow-water, tracer, wetting-and-drying and adjoint capabilities for studying circulation and inverse problems.",
+    "best_for": "Coastal circulation and adjoint studies",
+    "tags": [
+      "coastal",
+      "estuary",
+      "shallow-water",
+      "finite-element",
+      "adjoint"
+    ],
+    "docs_url": "https://thetisproject.org/",
+    "source_urls": [
+      "https://github.com/thetisproject/thetis",
+      "https://thetisproject.org/"
+    ],
+    "caveat": "Development versions may require matching Firedrake development branches; shallow-water assumptions must fit the intended physical scales.",
+    "maturity": "established"
+  },
+  {
+    "name": "WRF",
+    "repo": "wrf-model/WRF",
+    "category": "environmental",
+    "summary": "Provides the Weather Research and Forecasting modeling system for atmospheric research and numerical weather prediction. Useful when CFD studies need meteorological context or mesoscale flow conditions.",
+    "best_for": "Weather and mesoscale atmospheric modeling",
+    "tags": [
+      "atmosphere",
+      "weather",
+      "mesoscale",
+      "Fortran",
+      "forecasting"
+    ],
+    "docs_url": "https://www2.mmm.ucar.edu/wrf/users/",
+    "source_urls": [
+      "https://github.com/wrf-model/WRF",
+      "https://www2.mmm.ucar.edu/wrf/users/"
+    ],
+    "caveat": "Meteorological predictions depend on initialization, forcing and physical parameterizations; WRF is not a replacement for geometry-resolved local engineering CFD.",
+    "maturity": "established"
+  },
+  {
+    "name": "ADflow",
+    "repo": "mdolab/adflow",
+    "category": "general-solvers",
+    "summary": "Compressible Euler, laminar Navier-Stokes and RANS solver on structured multiblock and overset meshes, with a discrete adjoint and derivative-verification facilities for aerodynamic design optimization.",
+    "best_for": "Gradient-based aerodynamic shape optimization",
+    "tags": [
+      "finite-volume",
+      "RANS",
+      "adjoint",
+      "overset",
+      "optimization"
+    ],
+    "docs_url": "https://mdolab-adflow.readthedocs-hosted.com/en/latest/",
+    "source_urls": [
+      "https://github.com/mdolab/adflow",
+      "https://mdolab-adflow.readthedocs-hosted.com/"
+    ],
+    "caveat": "Targets structured and overset design workflows; a mesh generator and the surrounding MDO dependencies may be required for complete optimization studies.",
+    "maturity": "established"
+  },
+  {
+    "name": "code_saturne",
+    "repo": "code-saturne/code_saturne",
+    "category": "general-solvers",
+    "summary": "EDF's general-purpose CFD system for industrial flow and transport studies, providing finite-volume numerics, turbulence and heat-transfer models, parallel execution, and associated case setup tooling.",
+    "best_for": "Industrial thermal-fluid simulations",
+    "tags": [
+      "finite-volume",
+      "industrial",
+      "turbulence",
+      "heat-transfer",
+      "MPI"
+    ],
+    "docs_url": "https://code-saturne.org/en",
+    "source_urls": [
+      "https://github.com/code-saturne/code_saturne",
+      "https://code-saturne.org/en"
+    ],
+    "caveat": "The project describes this GitHub repository as its public mirror; follow official release and contribution instructions rather than treating every branch as a release.",
+    "maturity": "established"
+  },
+  {
+    "name": "COOLFluiD",
+    "repo": "andrealani/COOLFluiD",
+    "category": "general-solvers",
+    "summary": "Object-oriented high-performance platform for computational fluid dynamics, plasma and multiphysics simulations, exposing a modular research environment for developing and combining numerical methods and physical models.",
+    "best_for": "CFD and plasma solver development",
+    "tags": [
+      "multiphysics",
+      "plasma",
+      "HPC",
+      "C++",
+      "framework"
+    ],
+    "docs_url": "https://github.com/andrealani/COOLFluiD/wiki",
+    "source_urls": [
+      "https://github.com/andrealani/COOLFluiD",
+      "https://andrealani.github.io/COOLFluiD/"
+    ],
+    "caveat": "Check the relevant plugin documentation and licensing details; this is a developer-oriented platform with a substantial build configuration.",
+    "maturity": "research"
+  },
+  {
+    "name": "Elmer FEM",
+    "repo": "ElmerCSC/elmerfem",
+    "category": "general-solvers",
+    "summary": "Multiphysics finite-element package combining fluid mechanics, heat transfer and other field solvers, with mesh and graphical tools plus parallel infrastructure for coupled scientific simulations.",
+    "best_for": "Coupled finite-element thermal-fluid problems",
+    "tags": [
+      "finite-element",
+      "multiphysics",
+      "heat-transfer",
+      "Fortran",
+      "MPI"
+    ],
+    "docs_url": "https://github.com/ElmerCSC/elmerfem#readme",
+    "source_urls": [
+      "https://github.com/ElmerCSC/elmerfem",
+      "https://www.elmerfem.org/"
+    ],
+    "caveat": "Select the solver module, discretization and coupling strategy explicitly; breadth of available physics does not imply every coupling is turnkey.",
+    "maturity": "established"
+  },
+  {
+    "name": "FiPy",
+    "repo": "usnistgov/fipy",
+    "category": "general-solvers",
+    "summary": "Python finite-volume PDE framework from NIST for assembling coupled convection, diffusion, transient and source terms, particularly useful for transport, phase-field and materials-model prototyping and research.",
+    "best_for": "Transport-equation and phase-field prototypes",
+    "tags": [
+      "finite-volume",
+      "Python",
+      "transport",
+      "phase-field",
+      "PDE"
+    ],
+    "docs_url": "https://pages.nist.gov/fipy/en/latest/",
+    "source_urls": [
+      "https://github.com/usnistgov/fipy",
+      "https://pages.nist.gov/fipy/en/latest/"
+    ],
+    "caveat": "A PDE-building framework rather than a complete industrial Navier-Stokes workflow; users must formulate and verify their coupled equations.",
+    "maturity": "established"
+  },
+  {
+    "name": "Fluidity",
+    "repo": "FluidityProject/fluidity",
+    "category": "general-solvers",
+    "summary": "Unstructured finite-element and control-volume CFD code with anisotropic mesh adaptivity, parallel execution and Python interfaces, used for multiphase, geophysical and general fluid-dynamics simulations.",
+    "best_for": "Anisotropic adaptive flow simulations",
+    "tags": [
+      "finite-element",
+      "control-volume",
+      "adaptive-mesh",
+      "geophysical",
+      "MPI"
+    ],
+    "docs_url": "https://fluidityproject.github.io/",
+    "source_urls": [
+      "https://github.com/FluidityProject/fluidity",
+      "https://fluidityproject.github.io/"
+    ],
+    "caveat": "The dependency and platform setup is substantial; use installation instructions matching the chosen branch and environment.",
+    "maturity": "established"
+  },
+  {
+    "name": "Kratos Multiphysics",
+    "repo": "KratosMultiphysics/Kratos",
+    "category": "general-solvers",
+    "summary": "Modular C++ multiphysics framework with Python interfaces and dedicated fluid-dynamics, fluid-structure interaction and particle applications, supporting coupled engineering workflows and parallel simulation development.",
+    "best_for": "Coupled fluid-structure engineering applications",
+    "tags": [
+      "finite-element",
+      "multiphysics",
+      "FSI",
+      "C++",
+      "Python"
+    ],
+    "docs_url": "https://kratosmultiphysics.github.io/Kratos/",
+    "source_urls": [
+      "https://github.com/KratosMultiphysics/Kratos",
+      "https://kratosmultiphysics.github.io/Kratos/"
+    ],
+    "caveat": "Capabilities belong to specific applications; the core framework alone is not a configured CFD solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "Lethe",
+    "repo": "chaos-polymtl/lethe",
+    "category": "general-solvers",
+    "summary": "Finite-element CFD and discrete-element project using deal.II, with high-order continuous Galerkin formulations, adaptive meshes and coupled fluid-particle solvers for single-phase and multiphase engineering research.",
+    "best_for": "Adaptive CFD and CFD-DEM research",
+    "tags": [
+      "finite-element",
+      "adaptive-mesh",
+      "CFD-DEM",
+      "multiphase",
+      "deal.II"
+    ],
+    "docs_url": "https://chaos-polymtl.github.io/lethe/index.html",
+    "source_urls": [
+      "https://github.com/chaos-polymtl/lethe",
+      "https://chaos-polymtl.github.io/lethe/index.html"
+    ],
+    "caveat": "Requires a compatible deal.II dependency stack; choose the relevant solver and reproduce its documented benchmark before extending a model.",
+    "maturity": "research"
+  },
+  {
+    "name": "MOOSE Navier-Stokes",
+    "repo": "idaholab/moose",
+    "category": "general-solvers",
+    "summary": "Navier-Stokes module within the MOOSE multiphysics framework, offering finite-element and finite-volume formulations for pressure-based, compressible and porous-flow applications with shared nonlinear-solver infrastructure and coupling mechanisms.",
+    "best_for": "Custom coupled flow applications",
+    "tags": [
+      "finite-element",
+      "finite-volume",
+      "multiphysics",
+      "porous-media",
+      "automatic-differentiation"
+    ],
+    "docs_url": "https://mooseframework.inl.gov/modules/navier_stokes/",
+    "source_urls": [
+      "https://github.com/idaholab/moose",
+      "https://mooseframework.inl.gov/modules/navier_stokes/"
+    ],
+    "caveat": "Read the module's solver-capability matrix: turbulence, two-phase and compressibility support varies between formulations and is actively evolving.",
+    "maturity": "established"
+  },
+  {
+    "name": "OpenFOAM Foundation",
+    "repo": "OpenFOAM/OpenFOAM-dev",
+    "category": "general-solvers",
+    "summary": "Finite-volume CFD platform with an extensive solver, physical-model and meshing ecosystem, covering incompressible and compressible flows, turbulence, heat transfer, reacting systems and multiphase problems.",
+    "best_for": "Extensible engineering CFD workflows",
+    "tags": [
+      "finite-volume",
+      "multiphysics",
+      "turbulence",
+      "C++",
+      "MPI"
+    ],
+    "docs_url": "https://doc.cfd.direct/openfoam/user-guide/",
+    "source_urls": [
+      "https://github.com/OpenFOAM/OpenFOAM-dev",
+      "https://openfoam.org/"
+    ],
+    "caveat": "Foundation development branch; use a release for a fixed baseline. OpenCFD's separately maintained OpenFOAM distribution has a different upstream and release scheme.",
+    "maturity": "established"
+  },
+  {
+    "name": "SU2",
+    "repo": "su2code/SU2",
+    "category": "general-solvers",
+    "summary": "Multiphysics analysis and design suite centered on CFD and aerodynamic optimization, combining flow solvers, adjoint methods and Python-driven workflows for PDE-constrained engineering design studies.",
+    "best_for": "Aerodynamic analysis and adjoint optimization",
+    "tags": [
+      "finite-volume",
+      "aerodynamics",
+      "adjoint",
+      "optimization",
+      "MPI"
+    ],
+    "docs_url": "https://su2code.github.io/",
+    "source_urls": [
+      "https://github.com/su2code/SU2",
+      "https://su2code.github.io/"
+    ],
+    "caveat": "Check the configuration and physical-model support for the specific SU2 release; example coverage does not establish accuracy for a new design.",
+    "maturity": "established"
+  },
+  {
+    "name": "CadQuery",
+    "repo": "CadQuery/cadquery",
+    "category": "geometry-meshing",
+    "summary": "Python-based parametric CAD scripting built on Open CASCADE. Parameterized channels, nozzles and mechanical components can be generated consistently for geometry sweeps, automated studies and downstream mesh preparation.",
+    "best_for": "Scripted geometry sweeps",
+    "tags": [
+      "cad",
+      "python",
+      "parametric",
+      "automation"
+    ],
+    "docs_url": "https://cadquery.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/CadQuery/cadquery"
+    ],
+    "caveat": "Provides geometry construction rather than a CFD mesher or solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "CGAL",
+    "repo": "CGAL/cgal",
+    "category": "geometry-meshing",
+    "summary": "Computational geometry algorithms for triangulation, surface processing and mesh generation. Supplies robust geometric building blocks for custom CFD preprocessing tools rather than a single ready-made flow-analysis workflow.",
+    "best_for": "Geometry algorithms and mesh infrastructure",
+    "tags": [
+      "geometry",
+      "mesh",
+      "c++",
+      "algorithms"
+    ],
+    "docs_url": "https://doc.cgal.org/latest/Manual/packages.html",
+    "source_urls": [
+      "https://github.com/CGAL/cgal",
+      "https://doc.cgal.org/latest/Manual/packages.html"
+    ],
+    "caveat": "License terms differ by CGAL package; check the specific component before integration.",
+    "maturity": "established"
+  },
+  {
+    "name": "FreeCAD",
+    "repo": "FreeCAD/FreeCAD",
+    "category": "geometry-meshing",
+    "summary": "Parametric solid modelling for engineering geometry, with editable design history and interoperable CAD workflows. Useful for preparing and revising fluid-domain boundaries before meshing rather than solving flow.",
+    "best_for": "Parametric engineering geometry",
+    "tags": [
+      "cad",
+      "parametric",
+      "geometry",
+      "preprocessing"
+    ],
+    "docs_url": "https://www.freecad.org/",
+    "source_urls": [
+      "https://github.com/FreeCAD/FreeCAD"
+    ],
+    "caveat": "A CAD model is not automatically a watertight or appropriately resolved CFD domain.",
+    "maturity": "established"
+  },
+  {
+    "name": "IDWarp",
+    "repo": "mdolab/idwarp",
+    "category": "geometry-meshing",
+    "summary": "Deforms volume mesh nodes in response to surface perturbations using an inverse-distance approach. Useful for reusing a baseline CFD mesh during aerodynamic shape optimization and sensitivity calculations.",
+    "best_for": "Volume-mesh deformation",
+    "tags": [
+      "mesh-motion",
+      "optimization",
+      "aerodynamics",
+      "mdo"
+    ],
+    "docs_url": "https://mdolab-idwarp.readthedocs-hosted.com/en/latest/",
+    "source_urls": [
+      "https://github.com/mdolab/idwarp"
+    ],
+    "caveat": "Large surface changes can still produce poor-quality or invalid cells; monitor mesh quality.",
+    "maturity": "established"
+  },
+  {
+    "name": "meshio",
+    "repo": "nschloe/meshio",
+    "category": "geometry-meshing",
+    "summary": "Reads and writes many mesh formats through Python and a command-line interface. Helps move geometry, cells and associated fields between meshing tools, numerical solvers and visualization software.",
+    "best_for": "Mesh-format conversion",
+    "tags": [
+      "mesh",
+      "io",
+      "python",
+      "interoperability"
+    ],
+    "docs_url": "https://github.com/nschloe/meshio#readme",
+    "source_urls": [
+      "https://github.com/nschloe/meshio"
+    ],
+    "caveat": "Not every format preserves every field, boundary convention or high-order element representation.",
+    "maturity": "established"
+  },
+  {
+    "name": "Netgen",
+    "repo": "NGSolve/netgen",
+    "category": "geometry-meshing",
+    "summary": "Automatic tetrahedral mesh generation from constructive geometry, STL surfaces and CAD geometry. Python scripting, refinement and optimization make it useful for reproducible finite-element flow preprocessing.",
+    "best_for": "Scriptable tetrahedral meshes",
+    "tags": [
+      "mesh",
+      "tetrahedral",
+      "python",
+      "cad"
+    ],
+    "docs_url": "https://github.com/NGSolve/netgen#readme",
+    "source_urls": [
+      "https://github.com/NGSolve/netgen"
+    ],
+    "caveat": "Mesh topology, boundary tagging and wall-resolution requirements still need solver-specific checking.",
+    "maturity": "established"
+  },
+  {
+    "name": "pygalmesh",
+    "repo": "meshpro/pygalmesh",
+    "category": "geometry-meshing",
+    "summary": "Python interface to CGAL's mesh-generation capabilities, including primitive and implicit domains. Useful for constructing tetrahedral meshes from mathematical geometries and exporting them for numerical PDE experiments.",
+    "best_for": "Implicit-domain tetrahedral meshing",
+    "tags": [
+      "cgal",
+      "python",
+      "tetrahedral",
+      "implicit-geometry"
+    ],
+    "docs_url": "https://github.com/meshpro/pygalmesh#readme",
+    "source_urls": [
+      "https://github.com/meshpro/pygalmesh"
+    ],
+    "caveat": "Sharp intersections and detailed meshing controls need care; this is not a CAD repair application.",
+    "maturity": "established"
+  },
+  {
+    "name": "pyGeo",
+    "repo": "mdolab/pygeo",
+    "category": "geometry-meshing",
+    "summary": "Geometry parameterization and geometric constraints for multidisciplinary optimization. Free-form deformation, CAD interfaces and design-variable handling connect aerodynamic shape changes to repeatable CFD and coupled engineering studies.",
+    "best_for": "Shape parameterization for CFD optimization",
+    "tags": [
+      "geometry",
+      "ffd",
+      "optimization",
+      "mdo"
+    ],
+    "docs_url": "https://mdolab-pygeo.readthedocs-hosted.com/en/latest/",
+    "source_urls": [
+      "https://github.com/mdolab/pygeo"
+    ],
+    "caveat": "Individual CAD interfaces introduce their own installation and licensing requirements.",
+    "maturity": "established"
+  },
+  {
+    "name": "pygmsh",
+    "repo": "nschloe/pygmsh",
+    "category": "geometry-meshing",
+    "summary": "Python geometry helpers around Gmsh reduce repetitive low-level entity bookkeeping. Useful for creating parameterized two- and three-dimensional domains and exporting meshes into automated numerical experiments.",
+    "best_for": "Python-driven Gmsh geometry",
+    "tags": [
+      "gmsh",
+      "python",
+      "mesh",
+      "geometry"
+    ],
+    "docs_url": "https://github.com/nschloe/pygmsh#readme",
+    "source_urls": [
+      "https://github.com/nschloe/pygmsh"
+    ],
+    "caveat": "Requires Gmsh; native Gmsh features and version compatibility should be checked for advanced workflows.",
+    "maturity": "established"
+  },
+  {
+    "name": "pyHyp",
+    "repo": "mdolab/pyhyp",
+    "category": "geometry-meshing",
+    "summary": "Extrudes structured surface meshes into volume meshes using hyperbolic marching. Designed for the preprocessing stage of aerodynamic optimization workflows where body-fitted structured grids and controlled extrusion are useful.",
+    "best_for": "Structured aerodynamic volume meshes",
+    "tags": [
+      "structured-mesh",
+      "aerodynamics",
+      "mdo",
+      "preprocessing"
+    ],
+    "docs_url": "https://mdolab-pyhyp.readthedocs-hosted.com/en/latest/",
+    "source_urls": [
+      "https://github.com/mdolab/pyhyp"
+    ],
+    "caveat": "Needs a suitable structured surface mesh; it is not an arbitrary-geometry unstructured mesher.",
+    "maturity": "established"
+  },
+  {
+    "name": "SALOME SMESH",
+    "repo": "SalomePlatform/smesh",
+    "category": "geometry-meshing",
+    "summary": "SALOME's mesh module creates, edits, imports and exports computational meshes, with grouping, quality controls and geometry integration. Supports preprocessing pipelines needing interactive inspection alongside structured automation.",
+    "best_for": "Interactive mesh preparation and quality checks",
+    "tags": [
+      "mesh",
+      "salome",
+      "quality",
+      "preprocessing"
+    ],
+    "docs_url": "https://docs.salome-platform.org/latest/gui/SMESH/index.html",
+    "source_urls": [
+      "https://github.com/SalomePlatform/smesh"
+    ],
+    "caveat": "Building the module requires additional SALOME components; the repository is not a standalone application installer.",
+    "maturity": "established"
+  },
+  {
+    "name": "trimesh",
+    "repo": "mikedh/trimesh",
+    "category": "geometry-meshing",
+    "summary": "Python tools for loading, inspecting and manipulating triangular surfaces. Helpful for checking imported STL geometry, connectivity and surface properties before committing to expensive volume meshing or flow calculations.",
+    "best_for": "STL surface inspection",
+    "tags": [
+      "surface-mesh",
+      "stl",
+      "python",
+      "geometry"
+    ],
+    "docs_url": "https://trimesh.org/",
+    "source_urls": [
+      "https://github.com/mikedh/trimesh"
+    ],
+    "caveat": "Surface processing does not establish CAD fidelity or the adequacy of a CFD boundary-layer mesh.",
+    "maturity": "established"
+  },
+  {
+    "name": "ExaDG",
+    "repo": "exadg/exadg",
+    "category": "high-order",
+    "summary": "Matrix-free high-order discontinuous Galerkin project whose core incompressible Navier-Stokes solver targets LES and DNS, with additional flow-transport, moving-mesh, fluid-structure and compressible-flow capabilities for research applications.",
+    "best_for": "Matrix-free high-order incompressible CFD",
+    "tags": [
+      "discontinuous-Galerkin",
+      "matrix-free",
+      "LES",
+      "DNS",
+      "deal.II"
+    ],
+    "docs_url": "https://exadg.github.io/exadg/",
+    "source_urls": [
+      "https://github.com/exadg/exadg",
+      "https://github.com/exadg/exadg/wiki/Installation"
+    ],
+    "caveat": "Best aligned with quadrilateral/hexahedral high-order discretizations; installation requires a compatible finite-element and linear-algebra dependency stack.",
+    "maturity": "research"
+  },
+  {
+    "name": "FLEXI",
+    "repo": "flexi-framework/flexi",
+    "category": "high-order",
+    "summary": "Discontinuous Galerkin spectral-element framework for hyperbolic-parabolic conservation laws, emphasizing compressible CFD on unstructured hexahedral meshes with parallel execution and a supporting preprocessing and postprocessing suite.",
+    "best_for": "High-order compressible-flow simulations",
+    "tags": [
+      "DGSEM",
+      "compressible",
+      "high-order",
+      "Fortran",
+      "MPI"
+    ],
+    "docs_url": "https://www.flexi-project.org/",
+    "source_urls": [
+      "https://github.com/flexi-framework/flexi",
+      "https://www.flexi-project.org/"
+    ],
+    "caveat": "Uses a specific high-order mesh and preprocessing workflow; check the required HOPR and HDF5 versions for the chosen release.",
+    "maturity": "research"
+  },
+  {
+    "name": "HORSES3D",
+    "repo": "horses-framework/horses3d",
+    "category": "high-order",
+    "summary": "Fortran DG spectral-element multiphysics solver for compressible and incompressible flows, with polynomial adaptivity, turbulence closures and diffuse-interface multiphase formulations on curvilinear hexahedral meshes using hybrid CPU parallelism.",
+    "best_for": "Adaptive high-order multiphysics flow studies",
+    "tags": [
+      "DGSEM",
+      "p-adaptivity",
+      "multiphase",
+      "Fortran",
+      "MPI"
+    ],
+    "docs_url": "https://horses-framework.github.io/horses3d/",
+    "source_urls": [
+      "https://github.com/horses-framework/horses3d",
+      "https://horses-framework.github.io/horses3d/"
+    ],
+    "caveat": "The CPU repository and separate GPU project have different supported paths; verify that a desired feature is available in the selected implementation.",
+    "maturity": "research"
+  },
+  {
+    "name": "MIRGE-Com",
+    "repo": "illinois-ceesd/mirgecom",
+    "category": "high-order",
+    "summary": "Python-driven discontinuous Galerkin simulation application for compressible viscous and inviscid reactive mixtures, using unstructured meshes and accelerator-oriented infrastructure for exascale-enabled scramjet and fluid-flow research.",
+    "best_for": "Research on reacting compressible DG solvers",
+    "tags": [
+      "discontinuous-Galerkin",
+      "compressible",
+      "reacting-flow",
+      "Python",
+      "GPU"
+    ],
+    "docs_url": "https://mirgecom.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/illinois-ceesd/mirgecom",
+      "https://mirgecom.readthedocs.io/en/latest/mathematical/fluid.html"
+    ],
+    "caveat": "Research application with a specialized array, mesh and code-generation stack; inspect supported chemistry and transport assumptions before selecting it for a study.",
+    "maturity": "research"
+  },
+  {
+    "name": "Nek5000",
+    "repo": "Nek5000/Nek5000",
+    "category": "high-order",
+    "summary": "Spectral-element solver for incompressible and low-Mach flows, scalar transport and conjugate heat transfer, using high-order tensor-product elements and parallel algorithms suited to turbulence research.",
+    "best_for": "High-order incompressible DNS and heat transfer",
+    "tags": [
+      "spectral-element",
+      "incompressible",
+      "DNS",
+      "Fortran",
+      "MPI"
+    ],
+    "docs_url": "https://nek5000.github.io/NekDoc/",
+    "source_urls": [
+      "https://github.com/Nek5000/Nek5000",
+      "https://nek5000.github.io/NekDoc/theory.html"
+    ],
+    "caveat": "Classic CPU-oriented Nek implementation; mesh and polynomial resolution must be selected for the intended flow and turbulence regime.",
+    "maturity": "established"
+  },
+  {
+    "name": "nekRS",
+    "repo": "Nek5000/nekRS",
+    "category": "high-order",
+    "summary": "High-order spectral-element CFD solver for incompressible and low-Mach flow, with OCCA-based CPU and GPU backends, scalar transport, turbulence models and conjugate heat-transfer capabilities on HPC systems.",
+    "best_for": "GPU-oriented spectral-element CFD",
+    "tags": [
+      "spectral-element",
+      "GPU",
+      "OCCA",
+      "LES",
+      "HPC"
+    ],
+    "docs_url": "https://nekrsdoc.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/Nek5000/nekRS",
+      "https://nek5000.mcs.anl.gov/"
+    ],
+    "caveat": "Follow the release notes and backend requirements; the project distinguishes stable master from preview development and does not support every desktop platform.",
+    "maturity": "established"
+  },
+  {
+    "name": "PyFR",
+    "repo": "PyFR/PyFR",
+    "category": "high-order",
+    "summary": "Flux-reconstruction CFD platform for high-order scale-resolving flow simulations on unstructured mixed-element meshes, with code-generated computational kernels and multiple CPU and GPU execution backends for heterogeneous systems.",
+    "best_for": "High-order scale-resolving engineering flows",
+    "tags": [
+      "flux-reconstruction",
+      "high-order",
+      "unstructured",
+      "GPU",
+      "LES"
+    ],
+    "docs_url": "https://pyfr.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/PyFR/PyFR",
+      "https://www.pyfr.org/index.html"
+    ],
+    "caveat": "Backend, mesh-element and equation-system support depend on the selected release; compare cost at equivalent accuracy rather than polynomial order alone.",
+    "maturity": "established"
+  },
+  {
+    "name": "Trixi.jl",
+    "repo": "trixi-framework/Trixi.jl",
+    "category": "high-order",
+    "summary": "Julia framework for high-order conservation-law simulations, combining discontinuous Galerkin and related methods, adaptive tree-based meshes and an extensible equation interface for compressible-flow and numerical-method research.",
+    "best_for": "Adaptive high-order conservation-law research",
+    "tags": [
+      "discontinuous-Galerkin",
+      "AMR",
+      "Julia",
+      "conservation-laws",
+      "high-order"
+    ],
+    "docs_url": "https://trixi-framework.org/TrixiDocumentation/stable/",
+    "source_urls": [
+      "https://github.com/trixi-framework/Trixi.jl",
+      "https://trixi-framework.github.io/TrixiDocumentation/stable/"
+    ],
+    "caveat": "Check equation, mesh and backend compatibility in the documentation; Julia's first-run compilation cost should be separated from steady-state timings.",
+    "maturity": "research"
+  },
+  {
+    "name": "UCNS3D",
+    "repo": "ucns3d-team/UCNS3D",
+    "category": "high-order",
+    "summary": "Unstructured compressible-flow solver offering high-order finite-volume reconstruction and discontinuous Galerkin methods, mixed-element meshes, turbulence models and MPI/OpenMP execution for aerodynamic and multicomponent-flow research in two or three dimensions.",
+    "best_for": "High-order compressible CFD on mixed meshes",
+    "tags": [
+      "finite-volume",
+      "discontinuous-Galerkin",
+      "compressible",
+      "unstructured",
+      "Fortran"
+    ],
+    "docs_url": "https://github.com/ucns3d-team/UCNS3D#readme",
+    "source_urls": [
+      "https://github.com/ucns3d-team/UCNS3D",
+      "https://ucns3d-team.github.io/UCNS3D/docs/whitepaper-2022.pdf"
+    ],
+    "caveat": "Build bounds can be case-specific, and accelerator offload covers selected paths rather than every solver mode; follow the current build instructions.",
+    "maturity": "research"
+  },
+  {
+    "name": "DualSPHysics",
+    "repo": "DualSPHysics/DualSPHysics",
+    "category": "kinetic-particle",
+    "summary": "Smoothed-particle hydrodynamics solver using C++, CUDA and OpenMP, with engineering workflows focused on free surfaces, wave interactions and large-deformation fluid motion around moving bodies and structures.",
+    "best_for": "Free-surface waves and impact problems",
+    "tags": [
+      "C++",
+      "CUDA",
+      "GPU",
+      "SPH",
+      "fluid-structure",
+      "free-surface",
+      "waves"
+    ],
+    "docs_url": "https://github.com/DualSPHysics/DualSPHysics#readme",
+    "source_urls": [
+      "https://github.com/DualSPHysics/DualSPHysics",
+      "https://dual.sphysics.org/"
+    ],
+    "caveat": "The complete user distribution includes associated tools beyond the source repository; particle resolution, artificial compressibility and boundary treatment require case-specific assessment. Particle resolution, boundary treatment and weak-compressibility settings influence results; GPU builds require a supported CUDA toolchain.",
+    "maturity": "established"
+  },
+  {
+    "name": "FluidX3D",
+    "repo": "ProjectPhysX/FluidX3D",
+    "category": "kinetic-particle",
+    "summary": "OpenCL lattice-Boltzmann flow simulator with CPU and GPU execution, integrated visualization, free-surface and thermal extensions, and tools for importing triangulated geometry into a Cartesian lattice for interactive studies.",
+    "best_for": "Interactive GPU lattice-Boltzmann studies",
+    "tags": [
+      "LBM",
+      "OpenCL",
+      "GPU",
+      "free-surface",
+      "source-available"
+    ],
+    "docs_url": "https://github.com/ProjectPhysX/FluidX3D/blob/master/DOCUMENTATION.md",
+    "source_urls": [
+      "https://github.com/ProjectPhysX/FluidX3D",
+      "https://github.com/ProjectPhysX/FluidX3D/blob/master/DOCUMENTATION.md"
+    ],
+    "caveat": "Source-available with a non-commercial restriction, explicitly not OSI open source. Check its current license before use; the documented solver has no checkpoint/restart support.",
+    "maturity": "research"
+  },
+  {
+    "name": "GPUSPH",
+    "repo": "GPUSPH/gpusph",
+    "category": "kinetic-particle",
+    "summary": "CUDA implementation of weakly compressible smoothed-particle hydrodynamics, providing GPU-oriented infrastructure for free-surface flow simulations and research involving moving boundaries and fluid interactions with engineering geometries.",
+    "best_for": "GPU weakly compressible SPH",
+    "tags": [
+      "SPH",
+      "CUDA",
+      "free-surface",
+      "GPU",
+      "C++"
+    ],
+    "docs_url": "https://github.com/GPUSPH/gpusph#readme",
+    "source_urls": [
+      "https://github.com/GPUSPH/gpusph"
+    ],
+    "caveat": "CUDA hardware and a compatible compiler stack are required; establish the chosen formulation's resolution and compressibility error for the case.",
+    "maturity": "research"
+  },
+  {
+    "name": "HemoCell",
+    "repo": "UvaCsl/HemoCell",
+    "category": "kinetic-particle",
+    "summary": "Cell-resolved suspension framework coupling Palabos lattice-Boltzmann fluid dynamics to deformable Lagrangian cell membranes through immersed boundaries, with dedicated models and parallel data management for blood-flow research.",
+    "best_for": "Resolved blood-cell suspension simulations",
+    "tags": [
+      "LBM",
+      "immersed-boundary",
+      "blood-flow",
+      "suspensions",
+      "MPI"
+    ],
+    "docs_url": "https://hemocell.eu/",
+    "source_urls": [
+      "https://github.com/UvaCsl/HemoCell",
+      "https://hemocell.eu/user_guide/concepts/overview.html"
+    ],
+    "caveat": "A specialized cellular-flow model, not a clinical prediction tool; inspect cell mechanics, material parameters and case-specific validation requirements.",
+    "maturity": "research"
+  },
+  {
+    "name": "Lettuce",
+    "repo": "lettucecfd/lettuce",
+    "category": "kinetic-particle",
+    "summary": "PyTorch-based lattice-Boltzmann framework for two- and three-dimensional fluid simulations, enabling Python prototyping, GPU execution and experiments connecting kinetic flow solvers with neural networks and automatic differentiation.",
+    "best_for": "LBM and machine-learning experiments",
+    "tags": [
+      "LBM",
+      "PyTorch",
+      "GPU",
+      "automatic-differentiation",
+      "Python"
+    ],
+    "docs_url": "https://github.com/lettucecfd/lettuce#readme",
+    "source_urls": [
+      "https://github.com/lettucecfd/lettuce"
+    ],
+    "caveat": "Check current PyTorch/CUDA compatibility and whether custom kernels support the intended differentiable workflow; default installation targets specific CUDA versions.",
+    "maturity": "research"
+  },
+  {
+    "name": "NATriuM",
+    "repo": "lettucecfd/NATriuM",
+    "category": "kinetic-particle",
+    "summary": "High-order off-lattice Boltzmann research solver based on deal.II, supporting unstructured two- and three-dimensional grids through discontinuous-Galerkin or semi-Lagrangian streaming for weakly and fully compressible viscous flows.",
+    "best_for": "Off-lattice kinetic-method research reference",
+    "tags": [
+      "LBM",
+      "semi-Lagrangian",
+      "discontinuous-Galerkin",
+      "unstructured",
+      "deal.II"
+    ],
+    "docs_url": "https://github.com/lettucecfd/NATriuM#readme",
+    "source_urls": [
+      "https://github.com/lettucecfd/NATriuM",
+      "https://doi.org/10.1016/j.camwa.2018.10.041"
+    ],
+    "caveat": "Authors explicitly warn that the code is early-stage and they are unlikely to answer questions; treat it as a research reference with limited support.",
+    "maturity": "research"
+  },
+  {
+    "name": "PySPH",
+    "repo": "pypr/pysph",
+    "category": "kinetic-particle",
+    "summary": "Python framework for defining particle equations and integrators, generating compiled Cython or OpenCL kernels, and running several SPH formulations with optional shared-memory and distributed parallelism for research simulations.",
+    "best_for": "Reproducible SPH method development",
+    "tags": [
+      "MPI",
+      "OpenCL",
+      "Python",
+      "SPH",
+      "code-generation",
+      "education",
+      "free-surface",
+      "particle-methods",
+      "surface-tension"
+    ],
+    "docs_url": "https://pysph.readthedocs.io/en/main/",
+    "source_urls": [
+      "https://github.com/pypr/pysph",
+      "https://pysph.readthedocs.io/"
+    ],
+    "caveat": "Different bundled SPH formulations make different assumptions; compare conservation, convergence and boundary behavior for the scheme actually used. A method-development framework: selecting an available formulation does not establish suitability for a particular engineering problem.",
+    "maturity": "established"
+  },
+  {
+    "name": "Sailfish",
+    "repo": "sailfish-team/sailfish",
+    "category": "kinetic-particle",
+    "summary": "GPU lattice-Boltzmann simulation package with a Python-driven setup and CUDA or OpenCL execution, providing examples for exploring kinetic flow models and generated computational kernels on supported accelerators.",
+    "best_for": "Reference GPU lattice-Boltzmann implementations",
+    "tags": [
+      "LBM",
+      "CUDA",
+      "OpenCL",
+      "Python",
+      "GPU"
+    ],
+    "docs_url": "https://github.com/sailfish-team/sailfish#readme",
+    "source_urls": [
+      "https://github.com/sailfish-team/sailfish"
+    ],
+    "caveat": "Legacy dependency and GPU-toolchain assumptions need checking before adoption; its historical examples should not be assumed compatible with a current Python environment.",
+    "maturity": "research"
+  },
+  {
+    "name": "SPHinXsys",
+    "repo": "Xiangyu-Hu/SPHinXsys",
+    "category": "kinetic-particle",
+    "summary": "C++ multiphysics library built around smoothed-particle hydrodynamics, providing unified discretizations and strongly coupled fluid, solid and multibody models together with examples and a Python interface for engineering studies.",
+    "best_for": "Particle-based coupled fluid-solid models",
+    "tags": [
+      "C++",
+      "FSI",
+      "Python",
+      "SPH",
+      "fluid-structure",
+      "multiphysics",
+      "optimization",
+      "solid-dynamics"
+    ],
+    "docs_url": "https://www.sphinxsys.org/html/sphinx_index.html",
+    "source_urls": [
+      "https://github.com/Xiangyu-Hu/SPHinXsys",
+      "https://www.sphinxsys.org/html/sphinx_index.html",
+      "https://www.sphinxsys.org/"
+    ],
+    "caveat": "Select the specific formulation and tested example family; a common particle framework does not eliminate resolution or coupling-error studies. Research and engineering library with model-specific assumptions; choose examples matching the intended constitutive laws and flow regime.",
+    "maturity": "research"
+  },
+  {
+    "name": "DAPPER",
+    "repo": "nansencenter/DAPPER",
+    "category": "learning-rom",
+    "summary": "Experimental data-assimilation framework with ensemble and variational methods, diagnostics and model examples. Useful for learning state estimation and testing assimilation ideas on geophysical-fluid prototypes before solver-specific integration.",
+    "best_for": "Data-assimilation method comparisons",
+    "tags": [
+      "data-assimilation",
+      "enkf",
+      "geophysical",
+      "python"
+    ],
+    "docs_url": "https://nansencenter.github.io/DAPPER/",
+    "source_urls": [
+      "https://github.com/nansencenter/DAPPER"
+    ],
+    "caveat": "Designed for teaching and fundamental experiments; coupling production CFD requires additional implementation.",
+    "maturity": "research"
+  },
+  {
+    "name": "DeepXDE",
+    "repo": "lululxvi/deepxde",
+    "category": "learning-rom",
+    "summary": "Scientific machine-learning library supporting physics-informed networks and neural operators. Includes differential-equation workflows useful for fluid inverse problems, parameter estimation and exploratory surrogate studies with explicit boundary and initial conditions.",
+    "best_for": "PINN and inverse-flow experiments",
+    "tags": [
+      "pinn",
+      "neural-operator",
+      "inverse-problems",
+      "python"
+    ],
+    "docs_url": "https://deepxde.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/lululxvi/deepxde"
+    ],
+    "caveat": "PINN training convergence is problem dependent; verify predictions against trusted numerical or experimental references.",
+    "maturity": "established"
+  },
+  {
+    "name": "EZyRB",
+    "repo": "mathLab/EZyRB",
+    "category": "learning-rom",
+    "summary": "Data-driven reduced-basis modelling from parameterized numerical snapshots. Useful for constructing nonintrusive CFD surrogates when full-order results are available but modifying the original governing-equation implementation is impractical.",
+    "best_for": "Nonintrusive parametric CFD surrogates",
+    "tags": [
+      "rom",
+      "pod",
+      "surrogate",
+      "python"
+    ],
+    "docs_url": "https://mathlab.github.io/EZyRB/",
+    "source_urls": [
+      "https://github.com/mathLab/EZyRB"
+    ],
+    "caveat": "Prediction quality depends on snapshot coverage; extrapolation beyond the training parameter range needs testing.",
+    "maturity": "research"
+  },
+  {
+    "name": "ITHACA-FV",
+    "repo": "mathLab/ITHACA-FV",
+    "category": "learning-rom",
+    "summary": "OpenFOAM-based reduced-order-modelling framework with methods for developing compact finite-volume models. Useful for experimenting with projection, parameterized flow snapshots and reduced solvers close to existing OpenFOAM workflows.",
+    "best_for": "Reduced models built around OpenFOAM",
+    "tags": [
+      "openfoam",
+      "rom",
+      "finite-volume",
+      "pod"
+    ],
+    "docs_url": "https://github.com/mathLab/ITHACA-FV#readme",
+    "source_urls": [
+      "https://github.com/mathLab/ITHACA-FV"
+    ],
+    "caveat": "Check the supported OpenFOAM release and rebuild dependencies for the selected branch.",
+    "maturity": "research"
+  },
+  {
+    "name": "NeuralOperator",
+    "repo": "neuraloperator/neuraloperator",
+    "category": "learning-rom",
+    "summary": "Official neural-operator library containing Fourier Neural Operators and related architectures. Useful for learning mappings between PDE inputs and solution fields, including fluid and transport surrogate research.",
+    "best_for": "Fourier neural-operator baselines",
+    "tags": [
+      "neural-operator",
+      "fno",
+      "pytorch",
+      "surrogate"
+    ],
+    "docs_url": "https://neuraloperator.github.io/dev/",
+    "source_urls": [
+      "https://github.com/neuraloperator/neuraloperator"
+    ],
+    "caveat": "Resolution transfer does not guarantee accuracy under new geometries, regimes or boundary conditions.",
+    "maturity": "research"
+  },
+  {
+    "name": "NVIDIA PhysicsNeMo",
+    "repo": "NVIDIA/physicsnemo",
+    "category": "learning-rom",
+    "summary": "PyTorch-based physics machine-learning framework with reusable models and training recipes. Aerodynamics examples make it relevant to surface and volume surrogates, scalable training and engineering field prediction.",
+    "best_for": "Scalable engineering surrogates",
+    "tags": [
+      "physics-ml",
+      "pytorch",
+      "aerodynamics",
+      "surrogate"
+    ],
+    "docs_url": "https://docs.nvidia.com/physicsnemo/latest/",
+    "source_urls": [
+      "https://github.com/NVIDIA/physicsnemo"
+    ],
+    "caveat": "GPU requirements, model prerequisites and separate dataset terms vary across examples.",
+    "maturity": "established"
+  },
+  {
+    "name": "PDEArena",
+    "repo": "pdearena/pdearena",
+    "category": "learning-rom",
+    "summary": "Training and evaluation framework for neural PDE modelling, with architecture collections and fluid datasets. Useful for controlled comparisons of learned Navier–Stokes and shallow-water evolution models across spatial and temporal scales.",
+    "best_for": "Fluid surrogate benchmark experiments",
+    "tags": [
+      "benchmark",
+      "neural-pde",
+      "navier-stokes",
+      "shallow-water"
+    ],
+    "docs_url": "https://pdearena.github.io/pdearena/",
+    "source_urls": [
+      "https://github.com/pdearena/pdearena"
+    ],
+    "caveat": "Research benchmarks and trained models do not establish performance on industrial geometries or operating regimes.",
+    "maturity": "research"
+  },
+  {
+    "name": "PhiFlow",
+    "repo": "tum-pbs/PhiFlow",
+    "category": "learning-rom",
+    "summary": "Differentiable simulation toolkit integrated with NumPy and machine-learning frameworks. Provides fluid examples and automatic differentiation pathways useful for inverse problems, learned corrections and optimization through simulations.",
+    "best_for": "Differentiable fluid-learning experiments",
+    "tags": [
+      "differentiable",
+      "fluid",
+      "python",
+      "inverse-problems"
+    ],
+    "docs_url": "https://tum-pbs.github.io/PhiFlow/",
+    "source_urls": [
+      "https://github.com/tum-pbs/PhiFlow"
+    ],
+    "caveat": "Choose the numerical model and discretization for the intended physics; differentiability alone does not establish fidelity.",
+    "maturity": "research"
+  },
+  {
+    "name": "PyDMD",
+    "repo": "PyDMD/PyDMD",
+    "category": "learning-rom",
+    "summary": "Dynamic mode decomposition tools for extracting coherent spatial and temporal structures from snapshot data. Useful for analyzing CFD transients, building data-driven reduced models and comparing modal representations.",
+    "best_for": "Flow-snapshot modal analysis",
+    "tags": [
+      "dmd",
+      "rom",
+      "python",
+      "flow-analysis"
+    ],
+    "docs_url": "https://pydmd.github.io/PyDMD/",
+    "source_urls": [
+      "https://github.com/PyDMD/PyDMD"
+    ],
+    "caveat": "Mode estimates depend on sampling, noise and preprocessing; the fitted dynamics need independent validation.",
+    "maturity": "established"
+  },
+  {
+    "name": "pyMOR",
+    "repo": "pymor/pymor",
+    "category": "learning-rom",
+    "summary": "Model-order-reduction library using abstract interfaces to connect numerical algorithms and PDE backends. Supports reduced bases, POD and system-theoretic approaches for constructing compact parameterized flow or transport models.",
+    "best_for": "Projection-based reduced models",
+    "tags": [
+      "rom",
+      "reduced-basis",
+      "pod",
+      "python"
+    ],
+    "docs_url": "https://docs.pymor.org/",
+    "source_urls": [
+      "https://github.com/pymor/pymor"
+    ],
+    "caveat": "Connecting a new CFD solver requires compatible operators, data access and suitable reduction assumptions.",
+    "maturity": "established"
+  },
+  {
+    "name": "PySINDy",
+    "repo": "dynamicslab/pysindy",
+    "category": "learning-rom",
+    "summary": "Sparse system-identification tools for discovering compact dynamical models from data. Useful for fluid reduced coordinates and PDE-discovery experiments where interpretable model structure is preferable to a black-box surrogate.",
+    "best_for": "Data-driven fluid dynamics identification",
+    "tags": [
+      "system-identification",
+      "sindy",
+      "pde",
+      "rom"
+    ],
+    "docs_url": "https://pysindy.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/dynamicslab/pysindy",
+      "https://github.com/dynamicslab/pysindy/blob/master/examples/10_PDEFIND_examples.ipynb"
+    ],
+    "caveat": "Derivative estimation, noise and candidate-library choices strongly affect discovered equations.",
+    "maturity": "research"
+  },
+  {
+    "name": "Transolver",
+    "repo": "thuml/Transolver",
+    "category": "learning-rom",
+    "summary": "Research implementation of transformer-based PDE modelling on general geometries. Includes airfoil and car-flow design experiments, making it useful for studying geometry-aware surrogates alongside established neural-operator baselines.",
+    "best_for": "Geometry-aware aerodynamic surrogates",
+    "tags": [
+      "transformer",
+      "surrogate",
+      "aerodynamics",
+      "mesh"
+    ],
+    "docs_url": "https://github.com/thuml/Transolver#readme",
+    "source_urls": [
+      "https://github.com/thuml/Transolver"
+    ],
+    "caveat": "Published benchmark claims belong to the original study; reproduce the selected task before relying on generalization.",
+    "maturity": "research"
+  },
+  {
+    "name": "CFDEM coupling PUBLIC",
+    "repo": "CFDEMproject/CFDEMcoupling-PUBLIC",
+    "category": "multiphase-spray",
+    "summary": "Couples OpenFOAM flow calculations with discrete particle dynamics through selectable force and data-exchange models. Useful for studying fluidized beds, particulate transport and fluid-particle interaction workflows.",
+    "best_for": "CFD-DEM particulate flow",
+    "tags": [
+      "CFD-DEM",
+      "particles",
+      "fluidized-beds",
+      "OpenFOAM",
+      "multiphase"
+    ],
+    "docs_url": "https://github.com/CFDEMproject/CFDEMcoupling-PUBLIC#readme",
+    "source_urls": [
+      "https://github.com/CFDEMproject/CFDEMcoupling-PUBLIC",
+      "https://github.com/CFDEMproject/CFDEMcoupling-PUBLIC#readme"
+    ],
+    "caveat": "Public and commercial product capabilities differ. Verify the documented OpenFOAM and particle-solver versions before installation.",
+    "maturity": "established"
+  },
+  {
+    "name": "JAX-Fluids",
+    "repo": "tumaer/JAXFLUIDS",
+    "category": "multiphase-spray",
+    "summary": "Implements differentiable compressible flow simulation with high-order reconstruction, level-set and diffuse-interface two-phase methods. Enables research connecting numerical fluid dynamics, automatic differentiation and accelerator-based computation.",
+    "best_for": "Differentiable compressible multiphase research",
+    "tags": [
+      "differentiable",
+      "compressible",
+      "two-phase",
+      "JAX",
+      "high-order"
+    ],
+    "docs_url": "https://jax-fluids.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/tumaer/JAXFLUIDS",
+      "https://jax-fluids.readthedocs.io/"
+    ],
+    "caveat": "Differentiating a discrete solver does not automatically yield reliable gradients through shocks or interface events; examine discretization and sensitivity assumptions.",
+    "maturity": "research"
+  },
+  {
+    "name": "Mantaflow",
+    "repo": "thunil/mantaflow",
+    "category": "multiphase-spray",
+    "summary": "Combines a fluid-simulation core with Python scene definitions and an extensible plugin system. Supports liquid, smoke and learning experiments aimed at graphics-oriented fluid algorithm research.",
+    "best_for": "Liquid and smoke algorithm prototyping",
+    "tags": [
+      "free-surface",
+      "smoke",
+      "graphics",
+      "machine-learning",
+      "prototyping"
+    ],
+    "docs_url": "https://github.com/thunil/mantaflow",
+    "source_urls": [
+      "https://github.com/thunil/mantaflow",
+      "https://mantaflow.com/"
+    ],
+    "caveat": "Designed primarily for computer-graphics research; attractive visual output alone does not establish engineering accuracy.",
+    "maturity": "research"
+  },
+  {
+    "name": "MFC",
+    "repo": "MFlowCode/MFC",
+    "category": "multiphase-spray",
+    "summary": "Solves compressible multiphase flows with interface models, bubble dynamics, phase-change options and particle tracking. Useful for investigating shock-interface interaction and other strongly compressible multiphase phenomena.",
+    "best_for": "Shock-bubble interaction and compressible mixtures",
+    "tags": [
+      "multiphase",
+      "compressible",
+      "bubbles",
+      "phase-change",
+      "particle-tracking"
+    ],
+    "docs_url": "https://mflowcode.github.io/",
+    "source_urls": [
+      "https://github.com/MFlowCode/MFC",
+      "https://mflowcode.github.io/"
+    ],
+    "caveat": "Different mixture, interface and bubble models make different assumptions; select the model appropriate to the physical scale and regime.",
+    "maturity": "established"
+  },
+  {
+    "name": "SPlisHSPlasH",
+    "repo": "InteractiveComputerGraphics/SPlisHSPlasH",
+    "category": "multiphase-spray",
+    "summary": "Implements several incompressible SPH pressure solvers alongside viscosity, surface tension and rigid or deformable body coupling. Particularly useful for comparing particle-fluid simulation methods and visual experiments.",
+    "best_for": "SPH incompressibility and coupled particle scenes",
+    "tags": [
+      "SPH",
+      "incompressible",
+      "surface-tension",
+      "fluid-structure",
+      "graphics"
+    ],
+    "docs_url": "https://splishsplash.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/InteractiveComputerGraphics/SPlisHSPlasH",
+      "https://splishsplash.readthedocs.io/"
+    ],
+    "caveat": "Originates in physically based graphics research; engineering use needs independent dimensional, resolution and validation checks.",
+    "maturity": "established"
+  },
+  {
+    "name": "ABLATE",
+    "repo": "UBCHREST/ablate",
+    "category": "reacting-flows",
+    "summary": "Develops reacting-flow capabilities around turbulent mixing, fuel entrainment and ablative boundary layers. Offers a research entry point for studying combustion environments associated with hybrid rocket motors.",
+    "best_for": "Hybrid-rocket combustion and turbulent entrainment",
+    "tags": [
+      "combustion",
+      "ablation",
+      "rocket",
+      "reacting-flow"
+    ],
+    "docs_url": "https://ablate.dev/",
+    "source_urls": [
+      "https://github.com/UBCHREST/ablate",
+      "https://ablate.dev/"
+    ],
+    "caveat": "Research-oriented software; use documented examples and confirm the available physical models before planning a new application.",
+    "maturity": "research"
+  },
+  {
+    "name": "Cantera",
+    "repo": "Cantera/cantera",
+    "category": "reacting-flows",
+    "summary": "Provides thermochemistry, transport properties, reaction mechanisms, reactor networks and one-dimensional flames. A practical foundation for checking chemistry assumptions before embedding them in a reacting-flow solver.",
+    "best_for": "Ignition, flame-speed and mechanism studies",
+    "tags": [
+      "chemistry",
+      "thermodynamics",
+      "transport",
+      "flames",
+      "reactor-networks"
+    ],
+    "docs_url": "https://cantera.org/stable/",
+    "source_urls": [
+      "https://github.com/Cantera/cantera",
+      "https://cantera.org/stable/"
+    ],
+    "caveat": "Not a general three-dimensional CFD solver; mechanism suitability must be assessed for the intended conditions.",
+    "maturity": "established"
+  },
+  {
+    "name": "Fire Dynamics Simulator",
+    "repo": "firemodels/fds",
+    "category": "reacting-flows",
+    "summary": "Models low-speed fire-driven flows with large-eddy simulation, emphasizing smoke and heat transport. Its documentation includes separate verification and validation material for assessing intended fire-engineering applications.",
+    "best_for": "Fire, smoke and building-flow research",
+    "tags": [
+      "fire",
+      "smoke",
+      "LES",
+      "heat-transfer",
+      "safety"
+    ],
+    "docs_url": "https://pages.nist.gov/fds-smv/",
+    "source_urls": [
+      "https://github.com/firemodels/fds",
+      "https://pages.nist.gov/fds-smv/"
+    ],
+    "caveat": "A low-speed fire model rather than a general shock or detonation solver. Safety-critical conclusions require qualified interpretation and appropriate validation.",
+    "maturity": "established"
+  },
+  {
+    "name": "PeleC",
+    "repo": "Pele-Suite/PeleC",
+    "category": "reacting-flows",
+    "summary": "Solves compressible reacting flows using block-structured adaptive meshes and embedded boundaries. Connects detailed chemistry to flow calculations where acoustic waves and compressibility are physically important.",
+    "best_for": "Compressible combustion and shock-flame interaction",
+    "tags": [
+      "compressible",
+      "combustion",
+      "AMR",
+      "embedded-boundary",
+      "HPC"
+    ],
+    "docs_url": "https://pele-suite.github.io/PeleC/",
+    "source_urls": [
+      "https://github.com/Pele-Suite/PeleC",
+      "https://pele-suite.github.io/PeleC/"
+    ],
+    "caveat": "Requires the AMReX, PelePhysics and SUNDIALS stack; mesh, chemistry and temporal resolution need problem-specific assessment.",
+    "maturity": "established"
+  },
+  {
+    "name": "PeleLMeX",
+    "repo": "Pele-Suite/PeleLMeX",
+    "category": "reacting-flows",
+    "summary": "Combines a low-Mach reacting-flow formulation with adaptive refinement and embedded boundaries. Targets flame-turbulence research while avoiding the acoustic time-scale restriction of a fully compressible formulation.",
+    "best_for": "Low-Mach turbulent combustion",
+    "tags": [
+      "low-mach",
+      "combustion",
+      "AMR",
+      "DNS",
+      "LES"
+    ],
+    "docs_url": "https://pele-suite.github.io/PeleLMeX/",
+    "source_urls": [
+      "https://github.com/Pele-Suite/PeleLMeX",
+      "https://pele-suite.github.io/PeleLMeX/"
+    ],
+    "caveat": "The low-Mach formulation is unsuitable when shocks or strong acoustic coupling govern the physics. Use the documented model assumptions.",
+    "maturity": "research"
+  },
+  {
+    "name": "PelePhysics",
+    "repo": "Pele-Suite/PelePhysics",
+    "category": "reacting-flows",
+    "summary": "Supplies thermodynamics, transport, chemistry generation and additional spray, soot and radiation modules shared by Pele solvers. Useful when researching combustion models rather than duplicating property implementations.",
+    "best_for": "Chemistry, spray and soot infrastructure",
+    "tags": [
+      "chemistry",
+      "spray",
+      "soot",
+      "radiation",
+      "transport"
+    ],
+    "docs_url": "https://pele-suite.github.io/PelePhysics/",
+    "source_urls": [
+      "https://github.com/Pele-Suite/PelePhysics",
+      "https://pele-suite.github.io/PelePhysics/"
+    ],
+    "caveat": "A supporting physics library rather than a complete standalone CFD application; module support differs between Pele solvers.",
+    "maturity": "established"
+  },
+  {
+    "name": "pyJac",
+    "repo": "SLACKHA/pyJac",
+    "category": "reacting-flows",
+    "summary": "Generates analytical Jacobian source code for chemical reaction mechanisms. Helps researchers examine the expensive derivative calculations that arise inside stiff chemical-kinetics integrators and reacting-flow applications.",
+    "best_for": "Analytical chemical Jacobian generation",
+    "tags": [
+      "chemistry",
+      "Jacobian",
+      "code-generation",
+      "stiff-odes"
+    ],
+    "docs_url": "https://slackha.github.io/pyJac/",
+    "source_urls": [
+      "https://github.com/SLACKHA/pyJac",
+      "https://slackha.github.io/pyJac/"
+    ],
+    "caveat": "An older research tool with version-sensitive dependencies; generated code and mechanism support should be checked in the target environment.",
+    "maturity": "research"
+  },
+  {
+    "name": "pyMARS",
+    "repo": "Niemeyer-Research-Group/pyMARS",
+    "category": "reacting-flows",
+    "summary": "Reduces detailed chemical mechanisms using graph-based methods and sensitivity analysis. Useful for preparing smaller chemistry models when detailed mechanisms make reacting-flow or reactor studies too expensive.",
+    "best_for": "Chemical mechanism reduction",
+    "tags": [
+      "chemistry",
+      "mechanism-reduction",
+      "sensitivity-analysis",
+      "combustion"
+    ],
+    "docs_url": "https://niemeyer-research-group.github.io/pyMARS/",
+    "source_urls": [
+      "https://github.com/Niemeyer-Research-Group/pyMARS",
+      "https://niemeyer-research-group.github.io/pyMARS/"
+    ],
+    "caveat": "Reduction accuracy depends on the selected targets and training conditions; validate the reduced mechanism over the intended operating envelope.",
+    "maturity": "research"
+  },
+  {
+    "name": "Reaction Mechanism Generator",
+    "repo": "ReactionMechanismGenerator/RMG-Py",
+    "category": "reacting-flows",
+    "summary": "Constructs chemical kinetic mechanisms using reaction families and thermochemical data. Supports upstream chemistry development for combustion studies before mechanism reduction, reactor assessment or coupling to CFD.",
+    "best_for": "Building chemical mechanisms",
+    "tags": [
+      "chemistry",
+      "mechanism-generation",
+      "thermochemistry",
+      "kinetics"
+    ],
+    "docs_url": "https://reactionmechanismgenerator.github.io/RMG-Py/",
+    "source_urls": [
+      "https://github.com/ReactionMechanismGenerator/RMG-Py",
+      "https://reactionmechanismgenerator.github.io/RMG-Py/"
+    ],
+    "caveat": "Generated mechanisms are hypotheses requiring assessment against suitable data; this is not a spatial CFD solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "Spitfire",
+    "repo": "sandialabs/Spitfire",
+    "category": "reacting-flows",
+    "summary": "Builds tabulated chemistry models and integrates chemistry or reaction-diffusion systems. Particularly relevant to nonpremixed flamelet libraries used to reduce the cost of larger fire simulations.",
+    "best_for": "Flamelet tables and reaction-diffusion studies",
+    "tags": [
+      "flamelets",
+      "tabulated-chemistry",
+      "combustion",
+      "reactor-models"
+    ],
+    "docs_url": "https://spitfire.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/sandialabs/Spitfire",
+      "https://spitfire.readthedocs.io/"
+    ],
+    "caveat": "Tables remain specific to their generating assumptions, mechanism and parameter range; extrapolation requires separate assessment.",
+    "maturity": "research"
+  },
+  {
+    "name": "TChem",
+    "repo": "sandialabs/TChem",
+    "category": "reacting-flows",
+    "summary": "Provides chemical source terms, thermodynamic properties, Jacobians and canonical reactor formulations for complex kinetic mechanisms. Useful for integrating and studying the stiff chemistry component of reacting simulations.",
+    "best_for": "Chemical kinetics kernels and reactor models",
+    "tags": [
+      "chemistry",
+      "Jacobian",
+      "stiff-odes",
+      "reactor-models"
+    ],
+    "docs_url": "https://github.com/sandialabs/TChem#readme",
+    "source_urls": [
+      "https://github.com/sandialabs/TChem",
+      "https://github.com/sandialabs/TChem#readme"
+    ],
+    "caveat": "Distinguish this kinetics toolkit from the separate TChem-atm atmospheric-chemistry project; it does not supply a complete spatial flow solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "AFiD",
+    "repo": "PhysicsofFluids/AFiD",
+    "category": "turbulence-hpc",
+    "summary": "Parallel finite-difference flow solver for Rayleigh-Benard convection and Taylor-Couette turbulence, built around distributed decompositions and FFT-based algorithms for large canonical direct numerical simulations on HPC systems.",
+    "best_for": "Canonical convection and rotating-wall DNS",
+    "tags": [
+      "finite-difference",
+      "DNS",
+      "convection",
+      "Fortran",
+      "MPI"
+    ],
+    "docs_url": "https://github.com/PhysicsofFluids/AFiD#readme",
+    "source_urls": [
+      "https://github.com/PhysicsofFluids/AFiD"
+    ],
+    "caveat": "Specialized canonical-flow geometry and boundary conditions; check variant-specific documentation and dependencies rather than treating it as a general geometry solver.",
+    "maturity": "research"
+  },
+  {
+    "name": "CaNS",
+    "repo": "CaNS-World/CaNS",
+    "category": "turbulence-hpc",
+    "summary": "Parallel incompressible Navier-Stokes solver designed for canonical-flow DNS, using a structured finite-difference discretization and efficient pressure solution with CPU and GPU-oriented implementations for turbulence research at scale.",
+    "best_for": "Canonical wall-bounded turbulence DNS",
+    "tags": [
+      "DNS",
+      "finite-difference",
+      "incompressible",
+      "GPU",
+      "Fortran"
+    ],
+    "docs_url": "https://github.com/CaNS-World/CaNS#readme",
+    "source_urls": [
+      "https://github.com/CaNS-World/CaNS"
+    ],
+    "caveat": "Targets canonical structured domains; check grid, boundary-condition and accelerator constraints instead of assuming arbitrary industrial geometry support.",
+    "maturity": "research"
+  },
+  {
+    "name": "Dedalus",
+    "repo": "DedalusProject/dedalus",
+    "category": "turbulence-hpc",
+    "summary": "Spectral PDE framework with symbolic equation specification and parallel execution, supporting fluid-dynamics research across Cartesian and curved domains rather than restricting users to one fixed equation set.",
+    "best_for": "Custom spectral fluid-dynamics models",
+    "tags": [
+      "spectral",
+      "Python",
+      "PDE",
+      "MPI",
+      "geophysical"
+    ],
+    "docs_url": "https://dedalus-project.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/DedalusProject/dedalus",
+      "https://dedalus-project.readthedocs.io/en/latest/"
+    ],
+    "caveat": "Users formulate equations, gauge conditions and boundary constraints; this flexibility is not a substitute for checking mathematical well-posedness and numerical convergence.",
+    "maturity": "established"
+  },
+  {
+    "name": "FluidSim",
+    "repo": "fluiddyn/fluidsim",
+    "category": "turbulence-hpc",
+    "summary": "Python framework for reproducible fluid-dynamics simulations with extensible solvers, MPI-enabled pseudospectral methods, and integrated output and analysis workflows for turbulence and geophysical-flow research across multiple model equations.",
+    "best_for": "Reproducible Python turbulence experiments",
+    "tags": [
+      "pseudospectral",
+      "Python",
+      "MPI",
+      "turbulence",
+      "reproducibility"
+    ],
+    "docs_url": "https://fluidsim.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/fluiddyn/fluidsim",
+      "https://fluidsim.readthedocs.io/en/latest/",
+      "https://foss.heptapod.net/fluiddyn/fluidsim"
+    ],
+    "caveat": "Official publish-only GitHub mirror; canonical development and contributions are on the project's Heptapod Mercurial repository.",
+    "maturity": "established"
+  },
+  {
+    "name": "IAMR",
+    "repo": "AMReX-Fluids/IAMR",
+    "category": "turbulence-hpc",
+    "summary": "Parallel adaptive-mesh code for variable-density incompressible Navier-Stokes equations, providing an AMReX-based route to locally refined flow simulations and exploration of block-structured algorithms for research applications.",
+    "best_for": "Variable-density incompressible AMR studies",
+    "tags": [
+      "AMR",
+      "incompressible",
+      "variable-density",
+      "AMReX",
+      "MPI"
+    ],
+    "docs_url": "https://amrex-fluids.github.io/IAMR/",
+    "source_urls": [
+      "https://github.com/AMReX-Fluids/IAMR",
+      "https://amrex-fluids.github.io/IAMR/"
+    ],
+    "caveat": "Variable-density incompressibility is a modeling assumption, not a fully compressible shock-capturing formulation; check the examples and required AMReX revision.",
+    "maturity": "research"
+  },
+  {
+    "name": "incflo",
+    "repo": "AMReX-Fluids/incflo",
+    "category": "turbulence-hpc",
+    "summary": "AMReX-based incompressible Navier-Stokes application for flows in complex geometries, combining block-structured adaptive-grid infrastructure with embedded boundaries and shared hydrodynamic utilities for parallel CPU and GPU research.",
+    "best_for": "Adaptive embedded-boundary incompressible CFD",
+    "tags": [
+      "AMR",
+      "embedded-boundary",
+      "incompressible",
+      "AMReX",
+      "GPU"
+    ],
+    "docs_url": "https://amrex-fluids.github.io/incflo/",
+    "source_urls": [
+      "https://github.com/AMReX-Fluids/incflo",
+      "https://amrex-fluids.github.io/incflo/"
+    ],
+    "caveat": "Requires compatible AMReX and AMReX-Hydro versions; follow project instructions for supported solvers and boundary conditions rather than assuming general model coverage.",
+    "maturity": "research"
+  },
+  {
+    "name": "Oceananigans.jl",
+    "repo": "CliMA/Oceananigans.jl",
+    "category": "turbulence-hpc",
+    "summary": "Julia software for incompressible geophysical fluid dynamics on CPU and GPU hardware, supporting Cartesian and spherical-shell domains, turbulence studies and ocean-oriented models with programmable simulation workflows.",
+    "best_for": "GPU geophysical and ocean turbulence",
+    "tags": [
+      "Boussinesq",
+      "GPU",
+      "Julia",
+      "finite-volume",
+      "geophysical",
+      "incompressible",
+      "ocean"
+    ],
+    "docs_url": "https://clima.github.io/OceananigansDocumentation/stable/",
+    "source_urls": [
+      "https://github.com/CliMA/Oceananigans.jl",
+      "https://clima.github.io/OceananigansDocumentation/stable/"
+    ],
+    "caveat": "Ocean-oriented incompressible and hydrostatic/nonhydrostatic modeling assumptions differ from general compressible industrial CFD; choose the documented model appropriate to the scales. Its documented ocean and Boussinesq formulations do not cover arbitrary compressible engineering flows.",
+    "maturity": "established"
+  },
+  {
+    "name": "OpenSBLI",
+    "repo": "opensbli/opensbli",
+    "category": "turbulence-hpc",
+    "summary": "Python code-generation framework translating symbolic compressible-flow equations into parallel high-order finite-difference solvers, with structured curvilinear multiblock meshes and WENO or TENO shock-capturing options for heterogeneous computing architectures.",
+    "best_for": "Generated compressible DNS solvers",
+    "tags": [
+      "code-generation",
+      "finite-difference",
+      "compressible",
+      "GPU",
+      "DNS"
+    ],
+    "docs_url": "https://github.com/opensbli/opensbli#readme",
+    "source_urls": [
+      "https://github.com/opensbli/opensbli",
+      "https://opensbli.github.io/"
+    ],
+    "caveat": "Generated solvers depend on a compatible parallel runtime and compiler stack; changing symbolic equations still requires numerical verification.",
+    "maturity": "research"
+  },
+  {
+    "name": "Pencil Code",
+    "repo": "pencil-code/pencil-code",
+    "category": "turbulence-hpc",
+    "summary": "Modular high-order finite-difference code for compressible hydrodynamics with magnetic fields and particles, offering MPI-parallel infrastructure and many sample configurations for turbulence and astrophysical-fluid research on distributed systems.",
+    "best_for": "Compressible turbulence and MHD research",
+    "tags": [
+      "finite-difference",
+      "compressible",
+      "MHD",
+      "particles",
+      "MPI"
+    ],
+    "docs_url": "https://pencil-code.org/",
+    "source_urls": [
+      "https://github.com/pencil-code/pencil-code",
+      "https://pencil-code.org/"
+    ],
+    "caveat": "The project documents its own source-management and contribution workflow; numerical diffusion and shock treatment must be selected for the intended regime.",
+    "maturity": "established"
+  },
+  {
+    "name": "spectralDNS",
+    "repo": "spectralDNS/spectralDNS",
+    "category": "turbulence-hpc",
+    "summary": "Python collection of parallel spectral Navier-Stokes and related solvers, providing an inspectable environment for direct numerical simulation and experiments with spectral discretization and time-integration methods.",
+    "best_for": "Python spectral DNS research",
+    "tags": [
+      "spectral",
+      "DNS",
+      "Python",
+      "MPI",
+      "Navier-Stokes"
+    ],
+    "docs_url": "https://github.com/spectralDNS/spectralDNS#readme",
+    "source_urls": [
+      "https://github.com/spectralDNS/spectralDNS"
+    ],
+    "caveat": "Research-oriented solver collection; verify the maintained solver path and current shenfun/MPI dependency compatibility for the intended example.",
+    "maturity": "research"
+  },
+  {
+    "name": "WaterLily.jl",
+    "repo": "WaterLily-jl/WaterLily.jl",
+    "category": "turbulence-hpc",
+    "summary": "Julia solver for unsteady incompressible viscous flow around dynamic immersed bodies, using Cartesian grids, geometric multigrid pressure solves and backend-agnostic CPU or GPU execution in two or three dimensions.",
+    "best_for": "Scripted immersed-body flow experiments",
+    "tags": [
+      "immersed-boundary",
+      "incompressible",
+      "Julia",
+      "GPU",
+      "multigrid"
+    ],
+    "docs_url": "https://github.com/WaterLily-jl/WaterLily.jl#readme",
+    "source_urls": [
+      "https://github.com/WaterLily-jl/WaterLily.jl"
+    ],
+    "caveat": "An immersed Cartesian-grid method rather than a body-fitted mesh solver; quantify boundary and grid-resolution effects for the target geometry.",
+    "maturity": "research"
+  },
+  {
+    "name": "Xcompact3d / Incompact3d",
+    "repo": "xcompact3d/Incompact3d",
+    "category": "turbulence-hpc",
+    "summary": "High-order compact finite-difference framework for turbulent-flow DNS and LES, combining Cartesian-grid efficiency, distributed-memory parallelism and immersed-boundary treatments for research on incompressible flows and complex geometries.",
+    "best_for": "Structured-grid incompressible DNS and LES",
+    "tags": [
+      "finite-difference",
+      "DNS",
+      "LES",
+      "immersed-boundary",
+      "Fortran"
+    ],
+    "docs_url": "https://xcompact3d.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/xcompact3d/Incompact3d",
+      "https://www.incompact3d.com/"
+    ],
+    "caveat": "The named repository is the CPU solver; inspect the separate accelerator developments rather than assuming identical GPU capabilities.",
+    "maturity": "established"
+  },
+  {
+    "name": "CFD Python",
+    "repo": "barbagroup/CFDPython",
+    "category": "verification-learning",
+    "summary": "A notebook sequence teaching CFD through incremental PDE implementations, culminating in Navier–Stokes exercises. Useful for understanding discretization, numerical diffusion and convergence before adopting larger solver frameworks.",
+    "best_for": "First-principles CFD learning",
+    "tags": [
+      "education",
+      "notebook",
+      "navier-stokes",
+      "finite-difference"
+    ],
+    "docs_url": "https://github.com/barbagroup/CFDPython#readme",
+    "source_urls": [
+      "https://github.com/barbagroup/CFDPython"
+    ],
+    "caveat": "Educational discretizations and small examples are not production CFD solvers.",
+    "maturity": "established"
+  },
+  {
+    "name": "CFDBench",
+    "repo": "luo-yining/CFDBench",
+    "category": "verification-learning",
+    "summary": "Fluid-dynamics surrogate benchmark with cavity, tube, dam and cylinder cases across boundary conditions, geometries and physical properties. Includes datasets and baseline implementations for studying inference-time generalization.",
+    "best_for": "Parameterized CFD surrogate comparisons",
+    "tags": [
+      "benchmark",
+      "dataset",
+      "surrogate",
+      "generalization"
+    ],
+    "docs_url": "https://github.com/luo-yining/CFDBench#readme",
+    "source_urls": [
+      "https://github.com/luo-yining/CFDBench"
+    ],
+    "caveat": "Original data generation uses commercial ICEM/Fluent; using released data has separate download and storage requirements.",
+    "maturity": "research"
+  },
+  {
+    "name": "FEniCSx Tutorial",
+    "repo": "jorgensd/dolfinx-tutorial",
+    "category": "verification-learning",
+    "summary": "Executable finite-element tutorial covering DOLFINx fundamentals and Navier–Stokes examples. Useful for deriving weak forms, applying boundary conditions and exploring transparent flow implementations with associated explanations and parallel execution.",
+    "best_for": "Finite-element flow implementation learning",
+    "tags": [
+      "fenicsx",
+      "finite-element",
+      "education",
+      "navier-stokes"
+    ],
+    "docs_url": "https://jsdokken.com/dolfinx-tutorial/",
+    "source_urls": [
+      "https://github.com/jorgensd/dolfinx-tutorial",
+      "https://jsdokken.com/dolfinx-tutorial/chapter2/navierstokes.html"
+    ],
+    "caveat": "Follow the tutorial's supported DOLFINx version; examples are not a universal production flow solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "Giverny / JHTDB access",
+    "repo": "sciserver/giverny",
+    "category": "verification-learning",
+    "summary": "Python and MATLAB access tools for querying the Johns Hopkins Turbulence Database. Enables sampled DNS fields and cutouts for turbulence analysis, numerical comparisons and data-driven research without downloading entire simulations.",
+    "best_for": "Reference DNS turbulence queries",
+    "tags": [
+      "dataset",
+      "dns",
+      "turbulence",
+      "python",
+      "matlab"
+    ],
+    "docs_url": "https://turbulence.idies.jhu.edu/database",
+    "source_urls": [
+      "https://github.com/sciserver/giverny",
+      "https://turbulence.idies.jhu.edu/database",
+      "https://turbulence.pha.jhu.edu/"
+    ],
+    "caveat": "Access tokens, query-size limits and available variables depend on the service and chosen dataset.",
+    "maturity": "established"
+  },
+  {
+    "name": "MASA",
+    "repo": "manufactured-solutions/MASA",
+    "category": "verification-learning",
+    "summary": "Library of manufactured analytical solutions and source terms for PDE software verification. Includes Euler, Navier–Stokes and turbulence-model formulations useful for checking implementation errors and observed convergence orders.",
+    "best_for": "Method-of-manufactured-solutions verification",
+    "tags": [
+      "verification",
+      "mms",
+      "navier-stokes",
+      "analytical"
+    ],
+    "docs_url": "https://manufactured-solutions.github.io/MASA/",
+    "source_urls": [
+      "https://github.com/manufactured-solutions/MASA"
+    ],
+    "caveat": "Manufactured solutions verify equation implementation; they do not validate physical modelling against experiments.",
+    "maturity": "established"
+  },
+  {
+    "name": "NekExamples",
+    "repo": "Nek5000/NekExamples",
+    "category": "verification-learning",
+    "summary": "Official Nek5000 examples with case descriptions and required simulation files. Includes canonical and turbulent-flow setups useful for learning spectral-element workflows, inspecting boundary conditions and checking an installation.",
+    "best_for": "Nek5000 example and verification cases",
+    "tags": [
+      "nek5000",
+      "spectral-element",
+      "examples",
+      "verification"
+    ],
+    "docs_url": "https://github.com/Nek5000/NekExamples#readme",
+    "source_urls": [
+      "https://github.com/Nek5000/NekExamples"
+    ],
+    "caveat": "Examples require Nek5000 and case-specific preparation; confirm mesh resolution and expected reference quantities.",
+    "maturity": "established"
+  },
+  {
+    "name": "PDEBench",
+    "repo": "pdebench/PDEBench",
+    "category": "verification-learning",
+    "summary": "Scientific machine-learning benchmark combining PDE datasets, data-generation code and baseline models. Fluid cases and varied initial, boundary and physical parameters support repeatable comparisons of learned flow prediction methods.",
+    "best_for": "Standardized fluid-surrogate evaluation",
+    "tags": [
+      "benchmark",
+      "dataset",
+      "fluid",
+      "neural-pde"
+    ],
+    "docs_url": "https://github.com/pdebench/PDEBench#readme",
+    "source_urls": [
+      "https://github.com/pdebench/PDEBench",
+      "https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-2986"
+    ],
+    "caveat": "Datasets are hosted separately and can be large; check documented environment and data-path requirements.",
+    "maturity": "research"
+  },
+  {
+    "name": "preCICE Tutorials",
+    "repo": "precice/tutorials",
+    "category": "verification-learning",
+    "summary": "Worked coupled-simulation cases using preCICE with real solvers, including fluid–structure and thermal applications. Useful for understanding participant configuration, adapter interfaces and reproducible multiphysics setup rather than isolated equations.",
+    "best_for": "Coupled CFD learning cases",
+    "tags": [
+      "precice",
+      "fsi",
+      "coupling",
+      "tutorials"
+    ],
+    "docs_url": "https://precice.org/tutorials.html",
+    "source_urls": [
+      "https://github.com/precice/tutorials"
+    ],
+    "caveat": "Most tutorials need multiple solver installations and adapters with compatible versions.",
+    "maturity": "established"
+  },
+  {
+    "name": "Riemann Problems and Jupyter Solutions",
+    "repo": "clawpack/riemann_book",
+    "category": "verification-learning",
+    "summary": "Interactive notebook book covering Riemann problems for hyperbolic equations, including acoustics, shallow water and Euler flow. Useful for understanding wave structure and comparing exact or approximate flux solvers.",
+    "best_for": "Hyperbolic-flow numerical methods",
+    "tags": [
+      "education",
+      "riemann",
+      "euler",
+      "finite-volume"
+    ],
+    "docs_url": "https://www.clawpack.org/riemann_book/html/Index.html",
+    "source_urls": [
+      "https://github.com/clawpack/riemann_book"
+    ],
+    "caveat": "Text and executable code have separate license files; consult both when reusing material.",
+    "maturity": "established"
+  },
+  {
+    "name": "Riemann-Solvers",
+    "repo": "cangyu/Riemann-Solvers",
+    "category": "verification-learning",
+    "summary": "Compact implementations accompanying classical Riemann-solver methods for advection, Burgers and Euler equations. Useful for comparing schemes and developing intuition about shocks, rarefactions and numerical fluxes.",
+    "best_for": "Hands-on flux-solver comparison",
+    "tags": [
+      "education",
+      "riemann",
+      "euler",
+      "c++"
+    ],
+    "docs_url": "https://github.com/cangyu/Riemann-Solvers#readme",
+    "source_urls": [
+      "https://github.com/cangyu/Riemann-Solvers"
+    ],
+    "caveat": "No repository-level license was apparent in the inspected listing; inspect permissions before copying code.",
+    "maturity": "research"
+  },
+  {
+    "name": "SU2 TestCases",
+    "repo": "su2code/TestCases",
+    "category": "verification-learning",
+    "summary": "Official collection of SU2 test inputs spanning flow, adjoints, conjugate heat transfer and other capabilities. Useful for reproducing regression cases and finding solver-specific examples matched to SU2 development.",
+    "best_for": "SU2 regression and setup examples",
+    "tags": [
+      "su2",
+      "regression",
+      "verification",
+      "adjoint"
+    ],
+    "docs_url": "https://github.com/su2code/TestCases#readme",
+    "source_urls": [
+      "https://github.com/su2code/TestCases"
+    ],
+    "caveat": "Match the case branch or revision to the SU2 solver version; a regression pass is not physical validation.",
+    "maturity": "established"
+  },
+  {
+    "name": "ADIOS2",
+    "repo": "ornladios/ADIOS2",
+    "category": "visualization",
+    "summary": "Scalable scientific input/output framework transporting self-describing variables through files, networks and memory. Useful for large CFD output pipelines, streaming analysis and reducing coupling between simulation and data consumers.",
+    "best_for": "HPC output and streaming pipelines",
+    "tags": [
+      "hpc",
+      "io",
+      "streaming",
+      "parallel"
+    ],
+    "docs_url": "https://adios2.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/ornladios/ADIOS2"
+    ],
+    "caveat": "Requires integration into the application or an existing compatible I/O path.",
+    "maturity": "established"
+  },
+  {
+    "name": "CGNS",
+    "repo": "CGNS/CGNS",
+    "category": "visualization",
+    "summary": "Defines and implements a standard for storing CFD meshes, flow solutions and related metadata. Useful when interoperability and consistent exchange between preprocessing, simulation and postprocessing tools matter.",
+    "best_for": "Standardized CFD data exchange",
+    "tags": [
+      "cfd",
+      "io",
+      "standard",
+      "hdf5"
+    ],
+    "docs_url": "https://cgns.org/",
+    "source_urls": [
+      "https://github.com/CGNS/CGNS"
+    ],
+    "caveat": "A data model and library, not a solver; interoperable use still depends on supported CGNS conventions.",
+    "maturity": "established"
+  },
+  {
+    "name": "netCDF4-Python",
+    "repo": "Unidata/netcdf4-python",
+    "category": "visualization",
+    "summary": "Python and NumPy interface to the netCDF library. Useful for reading, writing and inspecting array-based simulation datasets, especially geophysical and atmospheric fluid workflows using netCDF conventions.",
+    "best_for": "Geophysical CFD array I/O",
+    "tags": [
+      "python",
+      "netcdf",
+      "io",
+      "geophysical"
+    ],
+    "docs_url": "https://unidata.github.io/netcdf4-python/",
+    "source_urls": [
+      "https://github.com/Unidata/netcdf4-python"
+    ],
+    "caveat": "Respect netCDF thread-safety limitations and preserve units, coordinates and metadata conventions.",
+    "maturity": "established"
+  },
+  {
+    "name": "ParaView",
+    "repo": "Kitware/ParaView",
+    "category": "visualization",
+    "summary": "Scientific visualization application built on VTK, supporting large-data analysis and programmable pipelines. Widely useful for CFD field inspection, slices, streamlines, time histories and reproducible postprocessing workflows.",
+    "best_for": "General CFD postprocessing",
+    "tags": [
+      "visualization",
+      "vtk",
+      "hpc",
+      "postprocessing"
+    ],
+    "docs_url": "https://docs.paraview.org/en/latest/",
+    "source_urls": [
+      "https://github.com/Kitware/ParaView"
+    ],
+    "caveat": "Official GitHub mirror; upstream development and issue reporting take place on Kitware GitLab.",
+    "maturity": "established"
+  },
+  {
+    "name": "PyVista",
+    "repo": "pyvista/pyvista",
+    "category": "visualization",
+    "summary": "NumPy-friendly Python interface to VTK datasets, filters and plotting. Supports scripted extraction, slicing and interactive display of CFD meshes and fields in notebooks, applications or automated reporting.",
+    "best_for": "Python mesh and field analysis",
+    "tags": [
+      "python",
+      "vtk",
+      "visualization",
+      "notebooks"
+    ],
+    "docs_url": "https://docs.pyvista.org/",
+    "source_urls": [
+      "https://github.com/pyvista/pyvista"
+    ],
+    "caveat": "Headless rendering and remote notebook use may require additional graphics configuration.",
+    "maturity": "established"
+  },
+  {
+    "name": "trame",
+    "repo": "Kitware/trame",
+    "category": "visualization",
+    "summary": "Python framework for interactive scientific web applications, integrating VTK and ParaView rendering. Useful for turning CFD analysis pipelines into browser-accessible viewers with local or remote visualization.",
+    "best_for": "Browser-based CFD viewers",
+    "tags": [
+      "python",
+      "web",
+      "visualization",
+      "paraview"
+    ],
+    "docs_url": "https://kitware.github.io/trame/",
+    "source_urls": [
+      "https://github.com/Kitware/trame"
+    ],
+    "caveat": "Application deployment, authentication and resource limits need separate design for public-facing services.",
+    "maturity": "established"
+  },
+  {
+    "name": "vedo",
+    "repo": "marcomusy/vedo",
+    "category": "visualization",
+    "summary": "Python scientific visualization built on VTK and NumPy, with mesh manipulation and analysis helpers. Useful for compact exploratory scripts, interactive inspection and presentation of surfaces or volumetric flow data.",
+    "best_for": "Compact interactive visualization scripts",
+    "tags": [
+      "python",
+      "vtk",
+      "visualization",
+      "surface-mesh"
+    ],
+    "docs_url": "https://vedo.embl.es/",
+    "source_urls": [
+      "https://github.com/marcomusy/vedo"
+    ],
+    "caveat": "Check supported readers and field association conventions against the output format of your solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "VisIt",
+    "repo": "visit-dav/visit",
+    "category": "visualization",
+    "summary": "Scientific visualization and analysis application for mesh-based simulation data. Useful for exploring large CFD datasets, applying derived quantities and building repeatable analysis routines across supported simulation formats.",
+    "best_for": "Large mesh-based simulation analysis",
+    "tags": [
+      "visualization",
+      "hpc",
+      "mesh",
+      "postprocessing"
+    ],
+    "docs_url": "https://visit-sphinx-github-user-manual.readthedocs.io/",
+    "source_urls": [
+      "https://github.com/visit-dav/visit"
+    ],
+    "caveat": "Solver output must match a supported reader or be converted to an appropriate exchange format.",
+    "maturity": "established"
+  },
+  {
+    "name": "VTK",
+    "repo": "Kitware/VTK",
+    "category": "visualization",
+    "summary": "Visualization and data-processing toolkit for building scientific applications. Provides meshes, filters, rendering and file readers that underpin custom CFD postprocessing tools and many established visualization applications.",
+    "best_for": "Custom scientific visualization software",
+    "tags": [
+      "visualization",
+      "library",
+      "mesh",
+      "c++",
+      "python"
+    ],
+    "docs_url": "https://docs.vtk.org/en/latest/",
+    "source_urls": [
+      "https://github.com/Kitware/VTK"
+    ],
+    "caveat": "A development toolkit rather than a complete end-user CFD application; GitHub is an official mirror.",
+    "maturity": "established"
+  },
+  {
+    "name": "yt",
+    "repo": "yt-project/yt",
+    "category": "visualization",
+    "summary": "Python analysis and visualization for volumetric simulation datasets, including adaptive meshes. Useful for derived fields, spatial selections, profiles and volume rendering in computational astrophysics and related fluid simulations.",
+    "best_for": "AMR and astrophysical-fluid data analysis",
+    "tags": [
+      "python",
+      "amr",
+      "analysis",
+      "volume-rendering"
+    ],
+    "docs_url": "https://yt-project.org/doc/",
+    "source_urls": [
+      "https://github.com/yt-project/yt"
+    ],
+    "caveat": "Strongest fit is supported volumetric simulation formats; confirm a frontend exists for your solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "AMReX",
+    "repo": "AMReX-Codes/amrex",
+    "category": "numerical-infrastructure",
+    "summary": "Block-structured adaptive-mesh framework supplying parallel data structures, particles, embedded boundaries and CPU/GPU infrastructure for building CFD applications; it does not provide a single configured flow model.",
+    "best_for": "Building adaptive parallel CFD applications",
+    "tags": [
+      "AMR",
+      "HPC",
+      "GPU",
+      "embedded-boundary",
+      "framework"
+    ],
+    "docs_url": "https://amrex-codes.github.io/amrex/docs_html/",
+    "source_urls": [
+      "https://github.com/AMReX-Codes/amrex",
+      "https://amrex-codes.github.io/amrex/"
+    ],
+    "caveat": "Application developers must supply governing equations, discretizations and physical models. Match the framework revision and accelerator configuration to the consuming solver.",
+    "maturity": "established"
+  },
+  {
+    "name": "PETSc",
+    "repo": "petsc/petsc",
+    "category": "numerical-infrastructure",
+    "summary": "Parallel numerical toolkit providing sparse algebra, nonlinear solvers, time integration and distributed meshes for CFD implementations; application code still supplies the flow equations, discretization and boundary conditions.",
+    "best_for": "Scalable coupled CFD solver infrastructure",
+    "tags": [
+      "linear-algebra",
+      "nonlinear-solvers",
+      "MPI",
+      "time-integration",
+      "PDE"
+    ],
+    "docs_url": "https://petsc.org/release/",
+    "source_urls": [
+      "https://github.com/petsc/petsc",
+      "https://petsc.org/release/overview/",
+      "https://gitlab.com/petsc/petsc"
+    ],
+    "caveat": "Official GitHub mirror; primary development and issue tracking are on GitLab. Solver/preconditioner choices and nullspace handling must match the discretized problem.",
+    "maturity": "established"
+  },
+  {
+    "name": "hypre",
+    "repo": "hypre-space/hypre",
+    "category": "numerical-infrastructure",
+    "summary": "Parallel sparse-system library featuring algebraic and structured multigrid methods, useful for CFD pressure and diffusion solves; it supplies numerical components rather than a turnkey fluid simulation.",
+    "best_for": "Parallel multigrid pressure-system solution",
+    "tags": [
+      "multigrid",
+      "preconditioning",
+      "linear-algebra",
+      "MPI",
+      "GPU"
+    ],
+    "docs_url": "https://hypre.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/hypre-space/hypre",
+      "https://hypre.readthedocs.io/en/latest/"
+    ],
+    "caveat": "Select an interface and preconditioner appropriate to matrix structure and symmetry; GPU support varies by algorithm and build. Current licensing is Apache-2.0 OR MIT.",
+    "maturity": "established"
+  },
+  {
+    "name": "Ginkgo",
+    "repo": "ginkgo-project/ginkgo",
+    "category": "numerical-infrastructure",
+    "summary": "C++ sparse linear-algebra library targeting many-core CPUs and GPUs, useful inside CFD pressure or coupled-system solvers; users provide matrices and algorithms appropriate to their discretized equations.",
+    "best_for": "Portable GPU sparse-system backends",
+    "tags": [
+      "linear-algebra",
+      "GPU",
+      "preconditioning",
+      "C++",
+      "performance-portability"
+    ],
+    "docs_url": "https://ginkgo-project.github.io/ginkgo-generated-documentation/doc/develop/",
+    "source_urls": [
+      "https://github.com/ginkgo-project/ginkgo",
+      "https://ginkgo-project.github.io/"
+    ],
+    "caveat": "A linear-algebra backend, not a CFD application. Benchmark complete solver convergence and data movement; accelerator support does not guarantee faster end-to-end simulation.",
+    "maturity": "established"
+  },
+  {
+    "name": "MFEM",
+    "repo": "mfem/mfem",
+    "category": "numerical-infrastructure",
+    "summary": "Modular parallel finite-element library with high-order spaces, adaptive meshes and operator infrastructure for developing CFD discretizations; examples and miniapps are building blocks rather than complete engineering workflows.",
+    "best_for": "High-order finite-element flow research",
+    "tags": [
+      "finite-element",
+      "high-order",
+      "AMR",
+      "GPU",
+      "C++"
+    ],
+    "docs_url": "https://mfem.org/",
+    "source_urls": [
+      "https://github.com/mfem/mfem",
+      "https://mfem.org/examples/"
+    ],
+    "caveat": "Users select stable spaces, weak forms, boundary conditions and solvers. Reproducing an example does not establish the suitability of a newly assembled flow formulation.",
+    "maturity": "established"
+  },
+  {
+    "name": "deal.II",
+    "repo": "dealii/dealii",
+    "category": "numerical-infrastructure",
+    "summary": "C++ adaptive finite-element library providing meshes, finite-element spaces, assembly and parallel algorithms for custom CFD programs, including documented flow examples rather than one universal ready-to-run solver.",
+    "best_for": "Adaptive finite-element solver development",
+    "tags": [
+      "finite-element",
+      "adaptive-mesh",
+      "matrix-free",
+      "MPI",
+      "C++"
+    ],
+    "docs_url": "https://www.dealii.org/",
+    "source_urls": [
+      "https://github.com/dealii/dealii",
+      "https://www.dealii.org/current/doxygen/deal.II/Tutorial.html"
+    ],
+    "caveat": "A numerical development library; the application determines governing equations and stable discretization. Optional PETSc, Trilinos and p4est dependencies must be version-compatible.",
+    "maturity": "established"
+  },
+  {
+    "name": "DOLFINx / FEniCSx",
+    "repo": "FEniCS/dolfinx",
+    "category": "numerical-infrastructure",
+    "summary": "C++ and Python finite-element environment for expressing and assembling PDE problems, useful for programmable Navier-Stokes studies; users still formulate weak forms, constraints, boundary conditions and solver strategies.",
+    "best_for": "Programmable finite-element flow formulations",
+    "tags": [
+      "finite-element",
+      "Python",
+      "C++",
+      "MPI",
+      "weak-forms"
+    ],
+    "docs_url": "https://docs.fenicsproject.org/dolfinx/main/python/",
+    "source_urls": [
+      "https://github.com/FEniCS/dolfinx",
+      "https://docs.fenicsproject.org/dolfinx/main/python/",
+      "https://fenicsproject.org/"
+    ],
+    "caveat": "DOLFINx is the FEniCSx computational component, not a standalone packaged CFD model. Follow documentation matching the installed release and compatible FEniCSx dependencies.",
+    "maturity": "established"
+  },
+  {
+    "name": "libCEED",
+    "repo": "CEED/libCEED",
+    "category": "numerical-infrastructure",
+    "summary": "Library for factored finite-element operator evaluation across CPU and GPU backends, enabling matrix-free high-order CFD implementations; its algebraic interface integrates into applications rather than defining their complete physics.",
+    "best_for": "Portable high-order operator kernels",
+    "tags": [
+      "high-order",
+      "matrix-free",
+      "finite-element",
+      "GPU",
+      "operator-evaluation"
+    ],
+    "docs_url": "https://libceed.org/en/latest/",
+    "source_urls": [
+      "https://github.com/CEED/libCEED",
+      "https://libceed.org/en/latest/"
+    ],
+    "caveat": "Applications retain mesh, parallel decomposition and solver responsibilities. Backend behavior and deterministic capabilities vary; bundled fluid miniapps illustrate integration rather than certify arbitrary CFD models.",
+    "maturity": "established"
+  },
+  {
+    "name": "Kokkos Core",
+    "repo": "kokkos/kokkos",
+    "category": "numerical-infrastructure",
+    "summary": "C++ performance-portability programming library abstracting parallel execution and memory layouts, useful for implementing CFD kernels across CPU and GPU architectures; it supplies no governing equations or flow solver.",
+    "best_for": "Portable CFD kernel implementation",
+    "tags": [
+      "performance-portability",
+      "GPU",
+      "C++",
+      "parallel-programming",
+      "HPC"
+    ],
+    "docs_url": "https://kokkos.org/kokkos-core-wiki/",
+    "source_urls": [
+      "https://github.com/kokkos/kokkos",
+      "https://kokkos.org/"
+    ],
+    "caveat": "Performance portability still requires algorithm, layout and backend choices. Check compiler and device support for the chosen release; numerical correctness remains the application's responsibility.",
+    "maturity": "established"
+  },
+  {
+    "name": "SUNDIALS",
+    "repo": "llnl/sundials",
+    "category": "numerical-infrastructure",
+    "summary": "Time-integration and nonlinear-solver libraries for differential and algebraic systems, useful for stiff chemistry and semidiscrete CFD equations; applications supply spatial operators, physical models and appropriate solver interfaces.",
+    "best_for": "Stiff reacting-flow integration components",
+    "tags": [
+      "time-integration",
+      "ODE",
+      "DAE",
+      "nonlinear-solvers",
+      "sensitivity-analysis"
+    ],
+    "docs_url": "https://sundials.readthedocs.io/en/latest/",
+    "source_urls": [
+      "https://github.com/LLNL/sundials",
+      "https://sundials.readthedocs.io/en/latest/"
+    ],
+    "caveat": "Not a spatial CFD solver. Choose tolerances, Jacobians, vector backends and preconditioners for the actual stiffness and conservation requirements; keep package versions consistent.",
+    "maturity": "established"
+  },
+  {
+    "name": "p4est",
+    "repo": "cburstedde/p4est",
+    "category": "numerical-infrastructure",
+    "summary": "Parallel forest-of-octrees library managing adaptive mesh refinement, coarsening and partitioning, useful beneath scalable CFD discretizations; the consuming application supplies numerical fluxes, physical fields and time evolution.",
+    "best_for": "Distributed tree-based adaptive CFD meshes",
+    "tags": [
+      "AMR",
+      "octree",
+      "mesh-partitioning",
+      "MPI",
+      "library"
+    ],
+    "docs_url": "https://www.p4est.org/",
+    "source_urls": [
+      "https://github.com/cburstedde/p4est",
+      "https://www.p4est.org/"
+    ],
+    "caveat": "Mesh infrastructure rather than a flow solver. Official guidance warns that auto-generated GitHub source archives lack required components; use maintained release tarballs or initialize dependencies correctly.",
+    "maturity": "established"
+  }
+]

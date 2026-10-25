@@ -1,0 +1,32 @@
+name: Suggest a resource
+description: Add a useful canonical CFD repository or official resource.
+title: '[Resource] '
+labels: [resource]
+body:
+  - type: input
+    id: upstream
+    attributes:
+      label: Canonical upstream URL
+      placeholder: https://github.com/owner/project
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Official documentation or paper
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: CFD use case and proposed category
+      description: Explain what this helps a reader do and why it fills a gap.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Licence, maturity and limitations
+      description: Include primary evidence. Flag mirrors, source-available terms or maintenance notices.
+    validations:
+      required: true

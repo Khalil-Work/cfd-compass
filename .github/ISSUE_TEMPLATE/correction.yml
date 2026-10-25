@@ -1,0 +1,23 @@
+name: Correct a resource
+description: Fix a broken link, scope error, licence label or maintenance notice.
+title: '[Correction] '
+labels: [correction]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry name or URL
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary source evidence
+    validations:
+      required: true

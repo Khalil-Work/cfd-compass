@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Gmsh",
+    "url": "https://gmsh.info/",
+    "category": "geometry-meshing",
+    "summary": "Geometry construction, mesh generation and post-processing through a desktop interface or scripting APIs, useful for building reproducible CFD meshes and preparing parametric geometry studies.",
+    "kind": "software",
+    "source_urls": [
+      "https://gmsh.info/",
+      "https://gmsh.info/doc/texinfo/gmsh.html"
+    ],
+    "access_note": "Canonical development is on ONELAB GitLab. The official site documents GPLv2-or-later terms with a linking exception and separate commercial licensing options."
+  },
+  {
+    "name": "Basilisk",
+    "url": "https://basilisk.fr/",
+    "category": "multiphase-spray",
+    "summary": "Provides adaptive Cartesian PDE solvers, interface methods and a large collection of reproducible examples. Its native site combines source, documentation, tests and researcher-contributed simulation cases.",
+    "kind": "software",
+    "source_urls": [
+      "https://basilisk.fr/",
+      "https://basilisk.fr/src/",
+      "https://basilisk.fr/src/INSTALL"
+    ],
+    "access_note": "Canonical source is distributed through Darcs. Use the official project pages and source history rather than an arbitrary GitHub mirror."
+  },
+  {
+    "name": "OpenFOAM (OpenCFD distribution)",
+    "url": "https://www.openfoam.com/",
+    "category": "general-solvers",
+    "summary": "Provides the OpenCFD distribution of OpenFOAM with solver, model, meshing and post-processing documentation. Identify this distribution explicitly when choosing compatible tutorials, extensions and case files.",
+    "kind": "software",
+    "source_urls": [
+      "https://www.openfoam.com/",
+      "https://www.openfoam.com/documentation/",
+      "https://www.openfoam.com/documentation/licencing",
+      "https://gitlab.com/openfoam/core/openfoam"
+    ],
+    "access_note": "GPLv3 distribution distinct from the OpenFOAM Foundation edition. Follow the official download and version-specific documentation; its development repositories moved to GitLab.com."
+  },
+  {
+    "name": "Palabos",
+    "url": "https://palabos.unige.ch/",
+    "category": "kinetic-particle",
+    "summary": "Provides a lattice-Boltzmann framework for research and engineering flow applications. Its official site links the current source repository, documentation and examples covering interfaces, particles and porous media.",
+    "kind": "software",
+    "source_urls": [
+      "https://palabos.unige.ch/",
+      "https://gitlab.com/unigespc/palabos"
+    ],
+    "access_note": "Official source is hosted on GitLab and distributed under AGPLv3. Applications generally require programming rather than a turnkey graphical interface."
+  },
+  {
+    "name": "waLBerla",
+    "url": "https://www.walberla.net/",
+    "category": "kinetic-particle",
+    "summary": "Combines lattice-Boltzmann flow modeling, particle dynamics, moving geometries and code generation in a parallel multiphysics framework. Useful for constructing coupled flow applications on structured block grids.",
+    "kind": "software",
+    "source_urls": [
+      "https://www.walberla.net/",
+      "https://i10git.cs.fau.de/walberla/walberla"
+    ],
+    "access_note": "Official project states GPLv3; its maintained source is on the project GitLab server. Select models and generated kernels appropriate to the target hardware."
+  },
+  {
+    "name": "OpenLB",
+    "url": "https://www.openlb.net/",
+    "category": "kinetic-particle",
+    "summary": "Provides a modular lattice-Boltzmann library with examples spanning engineering flow, thermal transport, particles and porous media. The official user guide documents model setup and execution.",
+    "kind": "software",
+    "source_urls": [
+      "https://www.openlb.net/",
+      "https://www.openlb.net/overview/",
+      "https://openlb.gitlab.io/release/"
+    ],
+    "access_note": "The official project overview states GPLv2 for code. Documentation has separate GNU Free Documentation License terms; use the official release package."
+  },
+  {
+    "name": "TrioCFD",
+    "url": "https://gitlab.com/cea-trust-platform/triocfd/triocfd-code",
+    "category": "general-solvers",
+    "summary": "Documents the CEA turbulent-flow application built on TRUST, including thermal hydraulics, front tracking and fluid-structure models. Useful for understanding its model hierarchy and application scope.",
+    "kind": "software",
+    "source_urls": [
+      "https://triocfd-documentation.readthedocs.io/next/QuickStart.html",
+      "https://gitlab.com/cea-trust-platform/triocfd/triocfd-code"
+    ],
+    "access_note": "Source-only distribution now hosted on GitLab. Follow the versioned official documentation and compile against the required TRUST environment."
+  },
+  {
+    "name": "OpenGeoSys",
+    "url": "https://www.opengeosys.org/",
+    "category": "coupled-specialist",
+    "summary": "Models coupled thermal, hydraulic, mechanical and chemical processes in porous and fractured media. Offers subsurface-flow workflows, benchmark documentation and examples relevant to groundwater and geothermal research.",
+    "kind": "software",
+    "source_urls": [
+      "https://www.opengeosys.org/",
+      "https://gitlab.opengeosys.org/ogs/ogs"
+    ],
+    "access_note": "BSD-3-Clause project with active source hosted on its GitLab server. The old ufz/ogs GitHub repository explicitly directs users away from that stale location."
+  },
+  {
+    "name": "Turbulence Modeling Resource",
+    "url": "https://tmbwg.github.io/turbmodels/",
+    "category": "verification-learning",
+    "summary": "Documents RANS turbulence-model variants alongside verification grids, grid-convergence examples and fundamental validation cases. Helps distinguish implementation errors from the modeling limits of a turbulence closure.",
+    "kind": "reference",
+    "source_urls": [
+      "https://tmbwg.github.io/turbmodels/",
+      "https://www.nasa.gov/nasa-turbulence-modeling-resource/",
+      "https://www.nasa.gov/reference/turbulence-modeling-resource-large-files/"
+    ],
+    "access_note": "Moved from NASA Langley to the TMBWG site in February 2026, as confirmed by NASA. Some large files have separate NASA-hosted download locations."
+  },
+  {
+    "name": "ERCOFTAC Knowledge Base Wiki",
+    "url": "https://www.ercoftac.org/products_and_services/wiki/",
+    "category": "verification-learning",
+    "summary": "Organizes CFD application challenges, underlying flow regimes and practice guidance. Useful for understanding a case context, reviewing modeling limitations and locating documented industrial or canonical comparisons.",
+    "kind": "reference",
+    "source_urls": [
+      "https://www.ercoftac.org/products_and_services/wiki/",
+      "https://www.kbwiki.ercoftac.org/"
+    ],
+    "access_note": "ERCOFTAC advertises the wiki as free to visitors; individual test-data packages can have separate access and citation arrangements."
+  },
+  {
+    "name": "ERCOFTAC Classic Collection",
+    "url": "https://www.ercoftac.org/products_and_services/classic_collection_database/",
+    "category": "verification-learning",
+    "summary": "Indexes the original ERCOFTAC collection of flow test cases, experimental data and computational comparisons. Includes case descriptions and literature connections useful for selecting established validation exercises.",
+    "kind": "benchmark",
+    "source_urls": [
+      "https://www.ercoftac.org/products_and_services/classic_collection_database/",
+      "https://cfd.mace.manchester.ac.uk/ercoftac/"
+    ],
+    "access_note": "The official ERCOFTAC portal describes open access; inspect each dataset, its current hosting location and citation requirements."
+  },
+  {
+    "name": "Johns Hopkins Turbulence Database",
+    "url": "https://turbulence.idies.jhu.edu/home",
+    "category": "turbulence-hpc",
+    "summary": "Offers queryable numerical turbulence fields through web services and data subsets. Useful for investigating velocity statistics, derivatives, particle trajectories and learning methods without storing complete simulations locally.",
+    "kind": "dataset",
+    "source_urls": [
+      "https://turbulence.idies.jhu.edu/home",
+      "https://turbulence.pha.jhu.edu/"
+    ],
+    "access_note": "Follow dataset-specific citation and access instructions. Web-service limits, authentication requirements and storage formats vary; API clients are separate from the underlying data."
+  },
+  {
+    "name": "Engine Combustion Network",
+    "url": "https://ecn.sandia.gov/",
+    "category": "multiphase-spray",
+    "summary": "Collects documented spray and engine experiments with common operating conditions, injector geometry and measured quantities. Supports comparative assessments of injection, mixing, ignition, flame stabilization and soot models.",
+    "kind": "benchmark",
+    "source_urls": [
+      "https://ecn.sandia.gov/"
+    ],
+    "access_note": "Read each experiment's definitions, uncertainty, operating conditions and citation instructions. Matching a named Spray A or Spray G case requires more than reproducing nominal pressure and temperature."
+  },
+  {
+    "name": "University of Texas turbulence data",
+    "url": "https://turbulence.oden.utexas.edu/",
+    "category": "turbulence-hpc",
+    "summary": "Provides downloadable DNS statistics and supporting information for turbulent channel and Couette flows. Useful for checking wall-scaled profiles, stresses and other canonical turbulence statistics.",
+    "kind": "dataset",
+    "source_urls": [
+      "https://turbulence.oden.utexas.edu/"
+    ],
+    "access_note": "Read the README accompanying each Reynolds-number dataset and cite the associated papers. These statistics describe specific DNS configurations rather than arbitrary wall-bounded flows."
+  },
+  {
+    "name": "Turbulent Non-Premixed Flames Workshop data",
+    "url": "https://tnfworkshop.org/data-archives/",
+    "category": "reacting-flows",
+    "summary": "Collects experimental turbulent-flame datasets with scalar and velocity measurements in documented configurations. Supports comparisons of combustion submodels across piloted jets, bluff bodies, swirl and hydrogen flames.",
+    "kind": "dataset",
+    "source_urls": [
+      "https://tnfworkshop.org/data-archives/"
+    ],
+    "access_note": "Providers explicitly request reading documentation and referenced papers, including uncertainty information. The workshop does not guarantee the accuracy of every contributed dataset."
+  },
+  {
+    "name": "NASA NPARC verification and validation archive",
+    "url": "https://www.grc.nasa.gov/www/wind/valid/",
+    "category": "verification-learning",
+    "summary": "Provides example, verification and validation cases associated with Wind-US, alongside broader CFD assessment guidance. Useful for learning how numerical checks and experimental comparisons answer different questions.",
+    "kind": "benchmark",
+    "source_urls": [
+      "https://www.grc.nasa.gov/www/wind/valid/"
+    ],
+    "access_note": "A maintained-access legacy archive with cases from different periods; check case dates, solver assumptions and source-data terms before reuse."
+  },
+  {
+    "name": "Drag and Aeroelastic Prediction Workshops",
+    "url": "https://www.aiaa-dpw.org/",
+    "category": "verification-learning",
+    "summary": "Provides common aerodynamic geometries, experimental data, grids and comparison protocols for transonic drag and aeroelastic studies. Useful for separating mesh, numerical, turbulence-model and deformation effects.",
+    "kind": "benchmark",
+    "source_urls": [
+      "https://www.aiaa-dpw.org/",
+      "https://www.nasa.gov/general/aiaa-dpw/"
+    ],
+    "access_note": "Workshop participation and data use are different activities. Follow the selected edition's geometry, data, submission and citation requirements; do not mix results across configurations."
+  },
+  {
+    "name": "AIAA CFD High-Lift Prediction Workshop",
+    "url": "https://www.nasa.gov/reference/aiaa-cfd-high-lift-prediction-workshop/",
+    "category": "verification-learning",
+    "summary": "Collects standardized high-lift aircraft test cases, geometry, grids and comparison results. Helps researchers assess difficult separated-flow predictions around deployed slats and flaps under shared conditions.",
+    "kind": "benchmark",
+    "source_urls": [
+      "https://www.nasa.gov/reference/aiaa-cfd-high-lift-prediction-workshop/",
+      "https://hiliftpw.larc.nasa.gov/"
+    ],
+    "access_note": "Use the correct workshop edition and configuration. Individual geometry and experimental files may carry their own attribution, distribution and interpretation requirements."
+  }
+]

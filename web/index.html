@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>CFD Compass - discover tools for fluid dynamics</title>
+  <meta name="description" content="Explore a curated CFD directory: solvers, turbulence, combustion, sprays, meshing, visualization, scientific ML, benchmarks and workflows. Search by task, category and licence.">
+  <meta property="og:title" content="CFD Compass"><meta property="og:description" content="An open reference for fluid dynamics. Find tools for your next flow problem."><meta property="og:type" content="website"><meta property="og:image" content="https://khalil-work.github.io/cfd-compass/assets/social.png">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://khalil-work.github.io/cfd-compass/">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#directory">Skip to directory</a>
+<header><a class="wordmark" href="./"><img src="assets/mark.svg" width="40" height="40" alt="">CFD Compass</a><nav aria-label="Main"><a href="https://github.com/Khalil-Work/cfd-compass">GitHub ↗</a><a href="https://github.com/Khalil-Work/cfd-compass/releases/latest/download/CFD-Compass-Reference.pdf">PDF ↓</a><a href="https://github.com/Khalil-Work/cfd-compass/issues/new/choose">Contribute ↗</a></nav></header>
+<main>
+  <section class="hero" aria-labelledby="intro"><p class="eyebrow">THE OPEN FLUID DYNAMICS INDEX</p><h1 id="intro">A clearer path<br>through CFD.</h1><p class="lede">Find the right tools for your next flow problem.<br>Original summaries. Canonical upstreams. Practical selection notes.</p><p class="coverage" id="coverage">Loading the catalogue…</p><img class="hero-mark" src="assets/mark.svg" alt="Original compass and streamline mark"></section>
+  <section class="directory" id="directory" aria-labelledby="directory-title"><div class="section-heading"><h2 id="directory-title">Explore the collection</h2><a href="https://github.com/Khalil-Work/cfd-compass/blob/main/docs/SELECTION_GUIDE.md">How to choose a stack ↗</a></div>
+    <form id="filters" role="search"><label class="search-label" for="query">Search projects, physics, methods or tags</label><input type="search" id="query" placeholder="Try: LES, spray, meshing, Python, adjoint…" autocomplete="off"><div class="filter-row"><label>Topic<select id="category"><option value="">All topics</option></select></label><label>Context<select id="maturity"><option value="">All contexts</option><option value="established">Established</option><option value="research">Research</option><option value="emerging">Emerging</option></select></label><label>Licence<select id="licence"><option value="">All terms</option><option value="permissive">Common permissive</option><option value="copyleft">Common copyleft</option><option value="review">Inspect terms / unknown</option></select></label><label>Order<select id="sort"><option value="name">Name A–Z</option><option value="updated">Latest repository push</option><option value="stars">Stars in snapshot</option></select></label><button type="reset">Reset</button></div><label class="archive"><input type="checkbox" id="hide-archived"> Hide archived repositories</label></form>
+    <p class="note">Labels describe project context. Repository activity and stars are dated metadata, not scientific validation or performance rankings.</p>
+    <div class="result-heading"><p id="result-count" role="status" aria-live="polite"></p><a href="catalogue.csv" download>Export CSV ↓</a></div>
+    <div id="results" class="cards"></div><p id="empty" hidden>No matching resources. Try a broader term or reset the filters.</p>
+    <noscript><p>This search interface needs JavaScript. <a href="https://github.com/Khalil-Work/cfd-compass#browse-by-topic">Read the complete Markdown index</a> or <a href="catalogue.csv">download the CSV</a>.</p></noscript>
+  </section>
+  <section class="external-section"><div class="section-heading"><h2>Beyond GitHub</h2><span>Official homes & reference data</span></div><div id="external" class="external-grid"></div></section>
+  <section class="closing"><h2>Build a better reference, together.</h2><p>Know a useful tool or an outdated entry? Suggest a focused correction with an official source.</p><a class="button" href="https://github.com/Khalil-Work/cfd-compass/issues/new/choose">Suggest a resource ↗</a></section>
+</main>
+<footer><p>Curated by <a href="https://github.com/Khalil-Work">Khalil</a>. All software belongs to its upstream contributors.</p><p><a href="https://github.com/Khalil-Work/cfd-compass/blob/main/docs/METHODOLOGY.md">Methodology</a> · <a href="https://github.com/Khalil-Work/cfd-compass/blob/main/LICENSE">Licensing</a> · <a href="https://github.com/Khalil-Work/cfd-compass/blob/main/CITATION.cff">Cite the directory</a></p></footer>
+</body></html>

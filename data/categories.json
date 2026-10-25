@@ -1,0 +1,86 @@
+[
+  {
+    "id": "general-solvers",
+    "title": "General-purpose solvers & frameworks",
+    "icon": "🌊",
+    "description": "Finite-volume and finite-element starting points for engineering flow simulation."
+  },
+  {
+    "id": "high-order",
+    "title": "High-order & spectral methods",
+    "icon": "🔷",
+    "description": "Discontinuous Galerkin, spectral-element and high-order discretizations."
+  },
+  {
+    "id": "turbulence-hpc",
+    "title": "Turbulence, DNS, LES & HPC",
+    "icon": "🌀",
+    "description": "Research solvers, adaptive grids and large-scale flow computing."
+  },
+  {
+    "id": "kinetic-particle",
+    "title": "Lattice Boltzmann & particle methods",
+    "icon": "⚛️",
+    "description": "Kinetic, mesoscopic and particle-based fluid formulations."
+  },
+  {
+    "id": "reacting-flows",
+    "title": "Combustion, chemistry & reacting flows",
+    "icon": "🔥",
+    "description": "Chemical kinetics, flames, reacting-flow solvers and fire simulation."
+  },
+  {
+    "id": "multiphase-spray",
+    "title": "Multiphase flow, droplets & sprays",
+    "icon": "💧",
+    "description": "Interfaces, dispersed phases, droplets and free-surface simulation."
+  },
+  {
+    "id": "coupled-specialist",
+    "title": "Coupled physics & specialist applications",
+    "icon": "🔗",
+    "description": "Fluid-structure interaction, porous flow, biomedical flow and design."
+  },
+  {
+    "id": "environmental",
+    "title": "Ocean, atmosphere, wind & environmental flow",
+    "icon": "🌍",
+    "description": "Geophysical, coastal, hydrological and wind-energy modelling."
+  },
+  {
+    "id": "geometry-meshing",
+    "title": "Geometry, CAD & mesh generation",
+    "icon": "📐",
+    "description": "Geometry preparation, mesh generation, adaptation and quality tools."
+  },
+  {
+    "id": "visualization",
+    "title": "Visualization, post-processing & I/O",
+    "icon": "🎨",
+    "description": "Inspect, process, exchange and communicate simulation data."
+  },
+  {
+    "id": "learning-rom",
+    "title": "Scientific ML, differentiable CFD & ROM",
+    "icon": "🧠",
+    "description": "Physics-informed learning, operators, differentiable models and reduced-order methods."
+  },
+  {
+    "id": "verification-learning",
+    "title": "Verification, benchmarks & learning",
+    "icon": "🔬",
+    "description": "Teaching material, reference cases, datasets and numerical checks."
+  },
+  {
+    "id": "automation-uq",
+    "title": "Automation, optimization & uncertainty",
+    "icon": "⚙️",
+    "description": "Workflow orchestration, adjoints, sensitivity analysis and uncertainty quantification."
+  },
+  {
+    "id": "numerical-infrastructure",
+    "title": "Numerical infrastructure & parallel computing",
+    "icon": "🧮",
+    "description": "PDE assembly, adaptive grids, linear algebra and performance backbones used to build CFD applications."
+  }
+]
