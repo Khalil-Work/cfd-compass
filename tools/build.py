@@ -45,7 +45,7 @@ def main():
 
 <p align="center"><a href="{BASE}/actions/workflows/quality.yml"><img src="{BASE}/actions/workflows/quality.yml/badge.svg" alt="Catalogue checks"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/Catalogue-CC_BY_4.0-50ddc8?labelColor=102a3c" alt="Catalogue CC BY 4.0"></a></p>
 
-**{len(entries)} canonical repositories · {len(categories)} topic areas · {len(external)} official external resources**  
+**{len(entries)} canonical repositories · {len(categories)} topic areas · {len(external)} official external resources**<br>
 Metadata snapshot: **{snapshot}** · [JSON](data/catalogue.json) · [CSV](data/catalogue.csv) · [How entries are checked](docs/METHODOLOGY.md)
 
 CFD Compass brings together software and resources from their original teams: solvers, physical models, numerical methods, geometry, visualization, learning and reproducible workflows. Each entry explains what it helps with, links to upstream documentation, and records selection caveats. All project names and ownership remain with their creators.

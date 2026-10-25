@@ -42,7 +42,7 @@ class CatalogueChecks(unittest.TestCase):
         self.assertTrue(any("no checked API" in e for e in validation.validate(self.entries,self.categories,{"repositories":{}})))
 
     def test_malformed_contribution_types_report_errors(self):
-        self.entries[0].update(summary=None, source_urls=None, tags=["flow", "FLOW"], caveat=[]) 
+        self.entries[0].update(summary=None, source_urls=None, tags=["flow", "FLOW"], caveat=[])
         errors=validation.validate(self.entries,self.categories)
         self.assertTrue(any("empty summary" in e for e in errors))
         self.assertTrue(any("duplicate tags" in e for e in errors))

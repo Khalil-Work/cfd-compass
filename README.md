@@ -6,7 +6,7 @@
 
 <p align="center"><a href="https://github.com/Khalil-Work/cfd-compass/actions/workflows/quality.yml"><img src="https://github.com/Khalil-Work/cfd-compass/actions/workflows/quality.yml/badge.svg" alt="Catalogue checks"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/Catalogue-CC_BY_4.0-50ddc8?labelColor=102a3c" alt="Catalogue CC BY 4.0"></a></p>
 
-**150 canonical repositories · 14 topic areas · 18 official external resources**  
+**150 canonical repositories · 14 topic areas · 18 official external resources**<br>
 Metadata snapshot: **2026-10-25** · [JSON](data/catalogue.json) · [CSV](data/catalogue.csv) · [How entries are checked](docs/METHODOLOGY.md)
 
 CFD Compass brings together software and resources from their original teams: solvers, physical models, numerical methods, geometry, visualization, learning and reproducible workflows. Each entry explains what it helps with, links to upstream documentation, and records selection caveats. All project names and ownership remain with their creators.
