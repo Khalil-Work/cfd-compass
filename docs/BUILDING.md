@@ -1,6 +1,6 @@
 # Build the reference
 
-Python3.10+ builds the catalogue and static directory using the standard library. The PDF additionally uses the pinned packages in `requirements.txt`. Node.js is used only for syntax-checking the client-side search script. No listed solver is installed or run.
+Python 3.10+ builds the catalogue and static directory using the standard library. The PDF additionally uses the pinned packages in `requirements.txt`. Node.js is used only for syntax-checking the client-side search script. No listed solver is installed or run.
 
 ```sh
 python -m unittest discover -s tests
