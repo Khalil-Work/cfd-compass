@@ -19,7 +19,7 @@ from reportlab.platypus.tableofcontents import TableOfContents
 ROOT=Path(__file__).resolve().parents[1]
 NAVY=colors.HexColor('#071623');TEAL=colors.HexColor('#187e78');CORAL=colors.HexColor('#be6247')
 INK=colors.HexColor('#183448');MUTED=colors.HexColor('#536d7d');PALE=colors.HexColor('#d8e6eb')
-VERSION='1.0.0'
+VERSION='1.0.1'
 
 
 def clean(value):

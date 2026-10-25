@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: Please cite this directory when referring to its curation, and cite original upstream software and papers separately when you use them.
 title: 'CFD Compass: An Open Reference for Fluid Dynamics'
 type: dataset
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-10-25
 authors:
   - family-names: KHALIL
