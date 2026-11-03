@@ -2401,6 +2401,22 @@
       "updated_at": "2026-10-24T15:11:07Z",
       "default_branch": "master",
       "license": "GPL-2.0"
+    },
+    "openflume/openflume": {
+      "full_name": "OpenFLUME/OpenFLUME",
+      "html_url": "https://github.com/OpenFLUME/OpenFLUME",
+      "description": "Open-source thermo-fluid network solver (GFSSP / SINDA-FLUINT class) that runs entirely in your browser. Steady + transient, real fluids, two-phase, conjugate heat transfer. Verified against NASA benchmarks.",
+      "private": false,
+      "archived": false,
+      "fork": false,
+      "stargazers_count": 6,
+      "forks_count": 0,
+      "language": "TypeScript",
+      "created_at": "2026-08-20T22:45:29Z",
+      "pushed_at": "2026-11-03T22:39:39Z",
+      "updated_at": "2026-11-03T23:24:01Z",
+      "default_branch": "main",
+      "license": "MIT"
     }
   }
 }

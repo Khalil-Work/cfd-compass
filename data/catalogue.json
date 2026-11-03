@@ -317,6 +317,32 @@
     "maturity": "established"
   },
   {
+    "name": "OpenFLUME",
+    "repo": "OpenFLUME/OpenFLUME",
+    "category": "coupled-specialist",
+    "summary": "Lumped-parameter finite-volume solver for one-dimensional thermo-fluid networks in the GFSSP / SINDA-FLUINT class, with steady Newton–Raphson and transient backward-Euler solves, CoolProp real-fluid properties, homogeneous two-phase flow, conjugate heat transfer and quasi-1-D choking. Runs as a browser editor, a TypeScript library or a Python package.",
+    "best_for": "System-level feed, cooling and cryogenic line networks",
+    "tags": [
+      "network-solver",
+      "1D",
+      "thermal-fluid",
+      "conjugate-heat-transfer",
+      "real-fluid",
+      "two-phase",
+      "propulsion",
+      "Python",
+      "TypeScript"
+    ],
+    "docs_url": "https://github.com/OpenFLUME/OpenFLUME/blob/main/docs/user-manual.md",
+    "source_urls": [
+      "https://github.com/OpenFLUME/OpenFLUME",
+      "https://github.com/OpenFLUME/OpenFLUME/blob/main/docs/user-manual.md",
+      "https://pypi.org/project/openflume/"
+    ],
+    "caveat": "Not a multidimensional CFD solver: no shock capture, no method-of-characteristics water hammer, and unlike fluids may only mix at declared reacting junctions. Embedded user code runs unsandboxed.",
+    "maturity": "emerging"
+  },
+  {
     "name": "OpenPNM",
     "repo": "PMEAL/OpenPNM",
     "category": "coupled-specialist",
